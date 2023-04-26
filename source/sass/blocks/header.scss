@@ -1,0 +1,25 @@
+.header {
+  background-image: $header-desktop;
+
+  @media (max-width: $vp-1199) {
+    background-image: $header-tablet;
+  }
+
+  @media (max-width: $vp-767) {
+    background-image: $header-mobile;
+  }
+}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1160px;
+
+  @media (max-width: $vp-1199) {
+    padding: 0 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
+    max-width: 737px;
+  }
+}
