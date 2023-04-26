@@ -1,0 +1,74 @@
+.promo {
+  padding: 120px 103px;
+}
+
+.promo__wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  display: grid;
+  grid-template-columns: 415px 1fr;
+  gap: 85px;
+}
+
+.promo__info {
+  margin-left: 60px;
+
+  & h2 {
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: $text-color;
+    margin: 0;
+    margin-bottom: 25px;
+    margin-top: 49px;
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $text-color;
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  & span {
+    font-family: $ff-roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+    margin: 0;
+  }
+}
+
+.promo__wrapper-image {
+  //width: 660px;
+  position: relative;
+}
+
+.promo__image {
+  position: absolute;
+  bottom: -114px;
+  left: -67px;
+}
+
+.promo__icon {
+  position: absolute;
+  left: 65px;
+  bottom: -54px;
+
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.promo__video {
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+}

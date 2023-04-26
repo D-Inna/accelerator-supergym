@@ -1,155 +1,176 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <nav class="header__nav">
-            <a class="header__logo" href="#">
-              <img src="./img/supergym.svg" width="122" height="44" alt="Логотип компании Супержим.">
-            </a>
-            <a class="header__link" href="tel:+88005555555">8-800-555-55-55</a>
-          </nav>
-          <div class="header__wrapper">
-            <div class="header__info">
-              <h1>ФИТНЕС <br> ЦЕНТР</h1>
-              <h2>Омск</h2>
-              <span>Тренажёрный зал <br>
-                Групповые занятия <br>
-                Кардио-зона </span>
-              <a class="header__link-info" href="">Купить абонемент</a>
-            </div>
-            <div class="header__image-container">
-              <picture>
-                <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/superman-tablet.webp 1x, ./img/superman-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/superman.webp 1x, ./img/superman@2x.webp 2x">
-                <source media="(max-width: 1199px)"
-                  srcset="./img/superman-tablet.jpg 1x, ./img/superman-tablet@2x.jpg 2x">
-                <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" loading="lazy"
-                  alt="Твой персональный тренер в роли супермена.">
-              </picture>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>ProjectName</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__nav">
+          <a class="header__logo" href="#">
+            <img src="./img/supergym.svg" width="122" height="44" alt="Логотип компании Супержим.">
+          </a>
+          <a class="header__link" href="tel:+88005555555">8-800-555-55-55</a>
+        </nav>
+        <div class="header__wrapper">
+          <div class="header__info">
+            <h1>ФИТНЕС <br> ЦЕНТР</h1>
+            <h2>Омск</h2>
+            <span>Тренажёрный зал <br>
+              Групповые занятия <br>
+              Кардио-зона </span>
+            <a class="header__link-info" href="">Купить абонемент</a>
+          </div>
+          <div class="header__image-container">
+            <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/superman-tablet.webp 1x, ./img/superman-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/superman.webp 1x, ./img/superman@2x.webp 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/superman-tablet.jpg 1x, ./img/superman-tablet@2x.jpg 2x">
+              <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" loading="lazy"
+                alt="Твой персональный тренер в роли супермена.">
+            </picture>
           </div>
         </div>
-      </header>
-      <main class="main-container">
-        <section class="promo">
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/room-mobile.webp 1x, ./img/room-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/room-tablet.webp 1x, ./img/room-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/room.webp 1x, ./img/room@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/room-mobile.jpg 1x, ./img/room-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="./img/room-tablet.jpg 1x, ./img/room-tablet@2x.jpg 2x">
-            <img src="./img/room.jpg" srcset="./img/room@2x.jpg 2x" width="660" height="401" loading="lazy"
-              alt="Тренажерный зал.">
-          </picture>
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="promo">
+        <div class="promo__wrapper">
+          <div class="promo__info">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <span>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</span>
+            <span class="promo__desktop"> В зале расположены
+              отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
+              оборудованных залов для различных видов групповых занятий.</span>
+          </div>
+          <div class="promo__wrapper-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/room-mobile.webp 1x, ./img/room-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/room-tablet.webp 1x, ./img/room-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/room.webp 1x, ./img/room@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/room-mobile.jpg 1x, ./img/room-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="./img/room-tablet.jpg 1x, ./img/room-tablet@2x.jpg 2x">
+              <img src="./img/room.jpg" srcset="./img/room@2x.jpg 2x" width="660" height="401" loading="lazy"
+                alt="Тренажерный зал.">
+            </picture>
 
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/video-mobile.webp 1x, ./img/video-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/video.webp 1x, ./img/video@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/video-mobile.jpg 1x, ./img/video-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-            <img src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" loading="lazy"
-              alt="Превью тренажерного зала.">
-          </picture>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/video-mobile.webp 1x, ./img/video-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/video-tablet.webp 1x, ./img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video.webp 1x, ./img/video@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/video-mobile.jpg 1x, ./img/video-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+              <img class="promo__image" src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" loading="lazy"
+                alt="Превью тренажерного зала.">
+            </picture>
+            <img class="promo__icon" src="./img/play.svg" alt="Воспроизвести видео.">
+            <div class="promo__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+            </div>
+          </div>
 
-        </section>
+        </div>
+      </section>
 
-        <section>
-          <picture>
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/inventory-tablet.webp 1x, ./img/inventory-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/inventory.webp 1x, ./img/inventory@2x.webp 2x">
-            <source media="(max-width: 1199px)" srcset="./img/inventory-tablet.png 1x, ./img/inventory-tablet@2x.png 2x">
-            <img src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="321" height="384" loading="lazy"
-              alt="Инвентарь тренажерного зала.">
-          </picture>
-        </section>
-        <section>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
-            <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500" loading="lazy"
-              alt="Cупер игры.">
-          </picture>
-        </section>
-        <section>
-          <picture>
-            <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">
-            <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" width="260" height="294" loading="lazy"
-              alt="Наши тренеры.">
-          </picture>
+      <section>
+        <picture>
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/inventory-tablet.webp 1x, ./img/inventory-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/inventory.webp 1x, ./img/inventory@2x.webp 2x">
+          <source media="(max-width: 1199px)" srcset="./img/inventory-tablet.png 1x, ./img/inventory-tablet@2x.png 2x">
+          <img src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="321" height="384" loading="lazy"
+            alt="Инвентарь тренажерного зала.">
+        </picture>
+      </section>
+      <section>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
+          <source media="(max-width: 1199px)"
+            srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
+          <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500" loading="lazy"
+            alt="Cупер игры.">
+        </picture>
+      </section>
+      <section>
+        <picture>
+          <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">
+          <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" width="260" height="294" loading="lazy"
+            alt="Наши тренеры.">
+        </picture>
 
-          <picture>
-            <source type="image/webp" srcset="./img/coach2.webp 1x, ./img/coach2@2x.webp 2x">
-            <img src="./img/coach2.jpg" srcset="./img/coach2@2x.jpg 2x" width="260" height="294" loading="lazy"
-              alt="Наши тренеры.">
-          </picture>
+        <picture>
+          <source type="image/webp" srcset="./img/coach2.webp 1x, ./img/coach2@2x.webp 2x">
+          <img src="./img/coach2.jpg" srcset="./img/coach2@2x.jpg 2x" width="260" height="294" loading="lazy"
+            alt="Наши тренеры.">
+        </picture>
 
-          <picture>
-            <source type="image/webp" srcset="./img/coach3.webp 1x, ./img/coach3@2x.webp 2x">
-            <img src="./img/coach3.jpg" srcset="./img/coach3@2x.jpg 2x" width="260" height="294" loading="lazy"
-              alt="Наши тренеры.">
-          </picture>
+        <picture>
+          <source type="image/webp" srcset="./img/coach3.webp 1x, ./img/coach3@2x.webp 2x">
+          <img src="./img/coach3.jpg" srcset="./img/coach3@2x.jpg 2x" width="260" height="294" loading="lazy"
+            alt="Наши тренеры.">
+        </picture>
 
-          <picture>
-            <source type="image/webp" srcset="./img/coach4.webp 1x, ./img/coach4@2x.webp 2x">
-            <img src="./img/coach4.jpg" srcset="./img/coach4@2x.jpg 2x" width="260" height="294" loading="lazy"
-              alt="Наши тренеры.">
-          </picture>
-        </section>
+        <picture>
+          <source type="image/webp" srcset="./img/coach4.webp 1x, ./img/coach4@2x.webp 2x">
+          <img src="./img/coach4.jpg" srcset="./img/coach4@2x.jpg 2x" width="260" height="294" loading="lazy"
+            alt="Наши тренеры.">
+        </picture>
+      </section>
 
-        <section>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/superwoman-mobile.webp 1x, ./img/superwoman-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/superwoman-tablet.webp 1x, ./img/superwoman-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/superwoman.webp 1x, ./img/superwoman@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/superwoman-mobile.jpg 1x, ./img/superwoman-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)" srcset="../img/superwoman-tablet.jpg 1x, ./img/superwoman-tablet@2x.jpg 2x">
-            <img src="./img/superwoman.jpg" srcset="./img/superwoman@2x.jpg 2x" width="280" height="462" loading="lazy"
-              alt="Твой персональный тренер в роли супервумен.">
-          </picture>
-        </section>
+      <section>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/superwoman-mobile.webp 1x, ./img/superwoman-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="./img/superwoman-tablet.webp 1x, ./img/superwoman-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/superwoman.webp 1x, ./img/superwoman@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="./img/superwoman-mobile.jpg 1x, ./img/superwoman-mobile@2x.jpg 2x">
+          <source media="(max-width: 1199px)"
+            srcset="../img/superwoman-tablet.jpg 1x, ./img/superwoman-tablet@2x.jpg 2x">
+          <img src="./img/superwoman.jpg" srcset="./img/superwoman@2x.jpg 2x" width="280" height="462" loading="lazy"
+            alt="Твой персональный тренер в роли супервумен.">
+        </picture>
+      </section>
 
-        <section>
-          <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/reviews-img-mobile.webp 1x, ./img/reviews-img-mobile@2x.webp 2x">
-            <source type="image/webp" srcset="./img/reviews-img.webp 1x,./img/reviews-img@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="./img/reviews-img-mobile.png 1x, ./img/reviews-img-mobile@2x.png 2x">
-            <img src="./img/reviews-img.png" srcset="./img/reviews-img@2x.png 2x" width="80" height="80" loading="lazy"
-              alt="Отзыв нашего клиента.">
-          </picture>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
+      <section>
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="./img/reviews-img-mobile.webp 1x, ./img/reviews-img-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="./img/reviews-img.webp 1x,./img/reviews-img@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="./img/reviews-img-mobile.png 1x, ./img/reviews-img-mobile@2x.png 2x">
+          <img src="./img/reviews-img.png" srcset="./img/reviews-img@2x.png 2x" width="80" height="80" loading="lazy"
+            alt="Отзыв нашего клиента.">
+        </picture>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
 
-    <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+  <!-- Модалки -->
+  <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -177,7 +198,8 @@
       </div>
     </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
