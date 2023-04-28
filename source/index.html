@@ -27,7 +27,7 @@
             <span>Тренажёрный зал <br>
               Групповые занятия <br>
               Кардио-зона </span>
-            <a class="header__link-info" href="">Купить абонемент</a>
+            <a class="header__link-info" href="#subscriptions">Купить абонемент</a>
           </div>
           <div class="header__image-container">
             <picture>
@@ -49,10 +49,12 @@
           <div class="promo__info">
             <h2>Тренажерный зал</h2>
             <h3>Просторный зал площадью 900&nbsp;кв/м</h3>
-            <span>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья.
+            <span>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+              тела и&nbsp;здоровья.
               Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</span>
             <span class="promo__desktop">В&nbsp;зале расположены
-              отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько
+              отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть
+              несколько
               оборудованных залов для различных видов групповых занятий.</span>
           </div>
           <div class="promo__wrapper-image">
@@ -76,8 +78,8 @@
               <source type="image/webp" srcset="./img/video.webp 1x, ./img/video@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="./img/video-mobile.jpg 1x, ./img/video-mobile@2x.jpg 2x">
               <source media="(max-width: 1199px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-              <img class="promo__image" src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228" loading="lazy"
-                alt="Превью тренажерного зала.">
+              <img class="promo__image" src="./img/video.jpg" srcset="./img/video@2x.jpg 2x" width="364" height="228"
+                loading="lazy" alt="Превью тренажерного зала.">
             </picture>
             <img class="promo__icon" src="./img/play.svg" alt="Воспроизвести видео.">
             <div class="promo__video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
@@ -86,147 +88,172 @@
         </div>
       </section>
 
-      <section class="subscriptions">
-        <div class="subscriptions__wrapper">
+      <section class="subscriptions" id="subscriptions">
+        <div class="subscriptions__wrapper" data-tabs="parent" data-delay="300" data-height="max">
           <h2>Абонементы</h2>
-          <div class="subscriptions__tabs">
-            <button class="subscriptions__tabs-button">1&nbsp;месяц</button>
-            <button class="subscriptions__tabs-button">6&nbsp;месяцев</button>
-            <button class="subscriptions__tabs-button">12&nbsp;месяцев</button>
+          <div class="subscriptions__tabs" data-tabs="controls">
+            <button class="subscriptions__tabs-button" type="button" data-tabs="control">1&nbsp;месяц</button>
+            <button class="subscriptions__tabs-button" type="button" data-tabs="control">6&nbsp;месяцев</button>
+            <button class="subscriptions__tabs-button" type="button" data-tabs="control">12&nbsp;месяцев</button>
           </div>
-          <ul class="subscriptions__list">
-            <li class="subscriptions__item">
-              <h3>С&nbsp;тренером</h3>
-              <h4>12&nbsp;занятий</h4>
-              <div class="subscriptions__price">
-               <span data-text="5000">5000</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Дневной</h3>
-              <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="1700">1700</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Полный день</h3>
-              <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="2700">2700</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-          </ul>
+          <div class="subscriptions__wrapper-list" data-tabs="content">
+            <ul class="subscriptions__list" data-tabs="element">
+              <li class="subscriptions__item">
+                <h3>С&nbsp;тренером</h3>
+                <h4>12&nbsp;занятий</h4>
+                <div class="subscriptions__price">
+                  <span data-text="5000">5000</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Дневной</h3>
+                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="1700">1700</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Полный день</h3>
+                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="2700">2700</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+            </ul>
 
-          <ul class="subscriptions__list">
-            <li class="subscriptions__item">
-              <h3>С&nbsp;тренером</h3>
-              <h4>32&nbsp;занятий</h4>
-              <div class="subscriptions__price">
-               <span data-text="29900">29900</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Дневной</h3>
-              <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="9900">9900</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Полный день</h3>
-              <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="15900">15900</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-          </ul>
+            <ul class="subscriptions__list" data-tabs="element">
+              <li class="subscriptions__item">
+                <h3>С&nbsp;тренером</h3>
+                <h4>32&nbsp;занятий</h4>
+                <div class="subscriptions__price">
+                  <span data-text="29900">29900</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Дневной</h3>
+                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="9900">9900</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Полный день</h3>
+                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="15900">15900</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+            </ul>
 
-          <ul class="subscriptions__list">
-            <li class="subscriptions__item">
-              <h3>С&nbsp;тренером</h3>
-              <h4>60&nbsp;занятий</h4>
-              <div class="subscriptions__price">
-               <span data-text="55000">55000</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Дневной</h3>
-              <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="17000">17000</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-            <li class="subscriptions__item">
-              <h3>Полный день</h3>
-              <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-              <div class="subscriptions__price">
-               <span data-text="22900">22900</span>
-               <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                <use href="./img/sprite.svg#rub"></use>
-              </svg>
-              </div>
-              <a class="subscriptions__link" href="#">купить абонемент</a>
-            </li>
-          </ul>
+            <ul class="subscriptions__list" data-tabs="element">
+              <li class="subscriptions__item">
+                <h3>С&nbsp;тренером</h3>
+                <h4>60&nbsp;занятий</h4>
+                <div class="subscriptions__price">
+                  <span data-text="55000">55000</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Дневной</h3>
+                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="17000">17000</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+              <li class="subscriptions__item">
+                <h3>Полный день</h3>
+                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                <div class="subscriptions__price">
+                  <span data-text="22900">22900</span>
+                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                    <use href="./img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <a class="subscriptions__link" href="#">купить абонемент</a>
+              </li>
+            </ul>
+          </div>
 
-         <picture>
-          <source type="image/webp" media="(max-width: 1199px)"
-            srcset="./img/inventory-tablet.webp 1x, ./img/inventory-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/inventory.webp 1x, ./img/inventory@2x.webp 2x">
-          <source media="(max-width: 1199px)" srcset="./img/inventory-tablet.png 1x, ./img/inventory-tablet@2x.png 2x">
-          <img src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="321" height="384" loading="lazy"
-            alt="Инвентарь тренажерного зала.">
-        </picture>
+
+          <picture>
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/inventory-tablet.webp 1x, ./img/inventory-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/inventory.webp 1x, ./img/inventory@2x.webp 2x">
+            <source media="(max-width: 1199px)"
+              srcset="./img/inventory-tablet.png 1x, ./img/inventory-tablet@2x.png 2x">
+            <img class="subscriptions__image" src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="321"
+              height="384" loading="lazy" alt="Инвентарь тренажерного зала.">
+          </picture>
         </div>
 
       </section>
-      <section>
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1199px)"
-            srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
-          <source media="(max-width: 1199px)"
-            srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
-          <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500" loading="lazy"
-            alt="Cупер игры.">
-        </picture>
+
+      <section class="promo-games">
+        <div class="promo-games__wrapper">
+          <div class="promo-games__inner">
+            <h2>SUPER GAMES</h2>
+            <dl class="promo-games__list">
+              <dt>Дата</dt>
+              <dd>7 <small>Марта<br>2019</small></dd>
+              <dt>Время</dt>
+              <dd>12:00</dd>
+            </dl>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <a class="promo-games__link" href="#">заполнить заявку</a>
+          </div>
+
+          <div class="promo-games__wrapper-image">
+            <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)"
+              srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
+            <source media="(max-width: 767px)"
+              srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
+            <source media="(max-width: 1199px)"
+              srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
+            <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500" loading="lazy"
+              alt="Cупер игры.">
+          </picture>
+          </div>
+
+        </div>
+
       </section>
+
       <section>
         <picture>
           <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">

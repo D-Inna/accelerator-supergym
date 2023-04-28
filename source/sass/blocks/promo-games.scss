@@ -1,0 +1,97 @@
+.promo-games {
+  padding: 120px 103px 106px;
+}
+
+.promo-games__wrapper {
+  display: flex;
+}
+
+.promo-games__inner {
+  padding: 85px 78px 87px;
+  background-color: $link-red;
+  color: $tel-color;
+  display: grid;
+  grid-template-columns: 201px auto;
+  gap: 50px;
+  row-gap: 0;
+
+  & h2 {
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 82px;
+    line-height: 79px;
+    grid-column: 1/2;
+    margin: 0;
+  }
+
+  & p {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    grid-column: 1/-1;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.promo-games__list {
+  grid-column: 2/3;
+  margin: 0;
+
+  & dt {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 0;
+  }
+
+  & dd {
+    font-family: $ff-roboto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    margin: 0;
+    display: flex;
+    gap: 7px;
+  }
+
+  & small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 9px;
+    position: relative;
+    margin-bottom: 13px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: -5px;
+      left: -29px;
+      height: 1px;
+      width: 64px;
+      background-color: $tel-color;
+    }
+
+    &::after {
+      width: 88px;
+      top: 14vh;
+    }
+  }
+}
+
+.promo-games__link {
+  grid-column: 1/-1;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: $tel-color;
+  text-transform: uppercase;
+  padding: 22px 114px;
+  border: 4px solid $tel-color;
+  margin-top: 5px;
+}

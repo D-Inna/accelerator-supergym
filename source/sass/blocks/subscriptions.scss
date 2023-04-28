@@ -1,9 +1,15 @@
 .subscriptions {
   background-color: $bg-color;
   padding: 120px 103px;
+  position: relative;
 }
 
 .subscriptions__wrapper {
+  ///////////////
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1160px;
+
   & h2 {
     font-family: $ff-alumni;
     font-weight: 600;
@@ -22,6 +28,17 @@
   flex-wrap: wrap;
   gap: 46px;
   justify-content: center;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 36%;
+    bottom: -15px;
+    height: 2px;
+    width: 341px;
+    background-color: $tabs-line-grey;
+  }
 }
 
 .subscriptions__tabs-button {
@@ -29,9 +46,32 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: $text-color;
+  color: $tabs-grey;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  position: relative;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+    color: $text-color;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 5%;
+      bottom: -15px;
+      height: 2px;
+      width: 100%;
+      background-color: $border-red;
+    }
+  }
+}
+
+.subscriptions__wrapper-list {
+  /////////////////
+  transition: height 0.3s;
 }
 
 .subscriptions__list {
@@ -42,6 +82,8 @@
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 40px;
+  //////////////
+  width: 100%;
 }
 
 .subscriptions__item {
@@ -69,6 +111,25 @@
     margin: 0;
     margin-bottom: 96px;
   }
+
+  &:focus,
+  &:focus-within,
+  &:hover {
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 7px solid $border-red;
+      border-image: linear-gradient(to left top, $border-blue, $border-red);
+      border-image-slice: 1;
+      pointer-events: none;
+    }
+  }
 }
 
 .subscriptions__price {
@@ -76,7 +137,7 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
-  margin-bottom: 59px;
+  margin-bottom: 57px;
 
   & span {
     font-family: $ff-roboto;
@@ -114,6 +175,21 @@
   line-height: 14px;
   color: $text-color;
   text-transform: uppercase;
-  padding: 27px 45px;
+  padding: 23px 45px;
   border: 2px solid $border;
+  display: block;
+
+  &:hover,
+  &:focus {
+    border: none;
+    padding: 27px 45px;
+    color: $tel-color;
+    background: linear-gradient(97.05deg, $link-red 17.6%, $link-blue 95.31%);
+  }
+}
+
+.subscriptions__image {
+  position: absolute;
+  bottom: -166px;
+  right: 0;
 }
