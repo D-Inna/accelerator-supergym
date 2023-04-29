@@ -1,0 +1,244 @@
+.coachеs {
+  padding: 106px 47px 140px;
+}
+
+.coachеs__wrapper {
+  ///////////////
+  max-width: 1272px;
+  position: relative;
+  margin: 0 auto;
+  ///////////////////
+  & h2 {
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 64px;
+    color: $text-color;
+    margin: 0;
+    margin-left: 56px;
+    margin-bottom: 48px;
+  }
+}
+
+.coachеs__list {
+  list-style-type: none;
+  margin: 0;
+
+  column-gap: 3.35%;
+  ///////////////////
+  margin-left: 55px;
+  margin-right: 55px;
+
+  @media (max-width: $vp-1199) {
+    gap: 0;
+  }
+}
+
+// .coachеs__inner {
+//   display: flex;
+//   padding: 0 10px;
+//   padding-bottom: 140px;
+// }
+
+.coachеs__slider {
+  max-width: 100%;
+
+  @media (max-width: 1279px) {
+    max-width: 866px;
+  }
+
+  @media (max-width: $vp-1199) {
+    max-width: 566px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 1 / 1.24;
+  }
+
+  @media (max-width: 350px) {
+    max-width: 226px;
+  }
+}
+
+.coachеs__item {
+  display: grid;
+  max-width: 260px;
+  max-height: 294px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 1 / 1.24;
+    max-height: none;
+  }
+
+  @media (max-width: 350px) {
+    max-width: 226px;
+    height: 274px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .coachеs__info {
+      background-color: $color-bg-slider;
+      display: block;
+      max-height: inherit;
+      padding-top: 50px;
+      overflow-y: scroll;
+      //scrollbar-width: none;
+
+      @media (max-width: $vp-1199) {
+        padding-right: 40px;
+      }
+
+      @media (max-width: $vp-767) {
+        padding-top: 41px;
+        padding-right: 33px;
+      }
+
+      // /* stylelint-disable */
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
+
+      // /* stylelint-enable */
+    }
+
+    .coachеs__info-inner {
+      display: block;
+    }
+  }
+}
+
+.coachеs__image-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  @media (max-width: $vp-1199) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.coachеs__info {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  display: grid;
+  color: $tel-color;
+  place-items: end center;
+  padding: 23px;
+
+  @media (max-width: $vp-1199) {
+    padding-bottom: 23px;
+    padding-left: 32px;
+  }
+
+  h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.coachеs__info-inner {
+  display: none;
+
+  span {
+    display: block;
+    color: $color-grey-white;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+}
+
+.coachеs__info-list {
+  margin: 0;
+  padding: 0;
+  display: list-item;
+  list-style-type: none;
+  padding-left: 45px;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 39px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 17px;
+  }
+}
+
+.coachеs__info-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  //display: flex;
+  margin-bottom: 13px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -15px;
+    //display: block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: $tel-color;
+
+    @media (max-width: $vp-767) {
+      top: 7px;
+      left: -17px;
+    }
+  }
+}
+
+.coachеs__button {
+  //position: static;
+  //position: absolute;
+  //align-self: center;
+  display: block;
+  color: transparent;
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 1px solid $arrow-grey;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+  }
+
+  &--prev {
+    margin-right: 2%;
+  }
+
+  &--next {
+    left: 91vw;
+
+    &::before {
+      transform: rotate(-135deg);
+    }
+  }
+}

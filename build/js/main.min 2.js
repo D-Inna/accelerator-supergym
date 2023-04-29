@@ -1230,13 +1230,11 @@ var initSwiper = function initSwiper() {
       // when window width is >= 1200px
       1300: {
         slidesPerView: 4,
-        slidesPerGroup: 4
-        // spaceBetween: 40,
+        slidesPerGroup: 1
       }
     }
   });
 };
-
 
 
 /***/ }),

@@ -98,7 +98,7 @@
           </div>
           <div class="subscriptions__wrapper-list" data-tabs="content">
             <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>С&nbsp;тренером</h3>
                 <h4>12&nbsp;занятий</h4>
                 <div class="subscriptions__price">
@@ -109,7 +109,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Дневной</h3>
                 <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                 <div class="subscriptions__price">
@@ -120,7 +120,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Полный день</h3>
                 <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                 <div class="subscriptions__price">
@@ -134,7 +134,7 @@
             </ul>
 
             <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>С&nbsp;тренером</h3>
                 <h4>32&nbsp;занятий</h4>
                 <div class="subscriptions__price">
@@ -145,7 +145,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Дневной</h3>
                 <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                 <div class="subscriptions__price">
@@ -156,7 +156,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Полный день</h3>
                 <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                 <div class="subscriptions__price">
@@ -170,7 +170,7 @@
             </ul>
 
             <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>С&nbsp;тренером</h3>
                 <h4>60&nbsp;занятий</h4>
                 <div class="subscriptions__price">
@@ -181,7 +181,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Дневной</h3>
                 <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
                 <div class="subscriptions__price">
@@ -192,7 +192,7 @@
                 </div>
                 <a class="subscriptions__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscriptions__item">
+              <li class="subscriptions__item" tabindex="0">
                 <h3>Полный день</h3>
                 <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
                 <div class="subscriptions__price">
@@ -236,48 +236,204 @@
 
           <div class="promo-games__wrapper-image">
             <picture>
-            <source type="image/webp" media="(max-width: 767px)"
-              srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px)"
-              srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
-            <source media="(max-width: 767px)"
-              srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
-            <source media="(max-width: 1199px)"
-              srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
-            <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500" loading="lazy"
-              alt="Cупер игры.">
-          </picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="./img/supergames-mobile.webp 1x, ./img/supergames-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="./img/supergames-tablet.webp 1x, ./img/supergames-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/supergames.webp 1x, ./img/supergames@2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="./img/supergames-mobile.jpg 1x, ./img/supergames-mobile@2x.jpg 2x">
+              <source media="(max-width: 1199px)"
+                srcset="./img/supergames-tablet.jpg 1x, ./img/supergames-tablet@2x.jpg 2x">
+              <img src="./img/supergames.jpg" srcset="./img/supergames@2x.jpg 2x" width="660" height="500"
+                loading="lazy" alt="Cупер игры.">
+            </picture>
           </div>
-
         </div>
 
       </section>
 
-      <section>
-        <picture>
-          <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">
-          <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" width="260" height="294" loading="lazy"
-            alt="Наши тренеры.">
-        </picture>
+      <section class="coachеs">
+        <div class="coachеs__wrapper">
+          <h2>Тренеры</h2>
+          <div class="coachеs__inner">
+            <div class="coachеs__slider swiper">
+              <ul class="coachеs__list swiper-wrapper">
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" width="260" height="294"
+                        loading="lazy" alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Анна Павлова</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                    </div>
+                  </div>
+                </li>
 
-        <picture>
-          <source type="image/webp" srcset="./img/coach2.webp 1x, ./img/coach2@2x.webp 2x">
-          <img src="./img/coach2.jpg" srcset="./img/coach2@2x.jpg 2x" width="260" height="294" loading="lazy"
-            alt="Наши тренеры.">
-        </picture>
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach2.webp 1x, ./img/coach2@2x.webp 2x">
+                      <img src="./img/coach2.jpg" srcset="./img/coach2@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Алексей Лавров</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
 
-        <picture>
-          <source type="image/webp" srcset="./img/coach3.webp 1x, ./img/coach3@2x.webp 2x">
-          <img src="./img/coach3.jpg" srcset="./img/coach3@2x.jpg 2x" width="260" height="294" loading="lazy"
-            alt="Наши тренеры.">
-        </picture>
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach3.webp 1x, ./img/coach3@2x.webp 2x">
+                      <img src="./img/coach3.jpg" srcset="./img/coach3@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Александр Пашков</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
 
-        <picture>
-          <source type="image/webp" srcset="./img/coach4.webp 1x, ./img/coach4@2x.webp 2x">
-          <img src="./img/coach4.jpg" srcset="./img/coach4@2x.jpg 2x" width="260" height="294" loading="lazy"
-            alt="Наши тренеры.">
-        </picture>
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach4.webp 1x, ./img/coach4@2x.webp 2x">
+                      <img src="./img/coach4.jpg" srcset="./img/coach4@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Мария Кетова</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
+
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach1.webp 1x, ./img/coach1@2x.webp 2x">
+                      <img src="./img/coach1.jpg" srcset="./img/coach1@2x.jpg 2x" width="260" height="294"
+                        loading="lazy" alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Анна Павлова</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
+
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach2.webp 1x, ./img/coach2@2x.webp 2x">
+                      <img src="./img/coach2.jpg" srcset="./img/coach2@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Алексей Лавров</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
+
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach3.webp 1x, ./img/coach3@2x.webp 2x">
+                      <img src="./img/coach3.jpg" srcset="./img/coach3@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Александр Пашков</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
+
+                <li class="coachеs__item swiper-slide" tabindex="0">
+                  <div class="coachеs__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="./img/coach4.webp 1x, ./img/coach4@2x.webp 2x">
+                      <img src="./img/coach4.jpg" srcset="./img/coach4@2x.jpg 2x" width="260" height="294" loading="lazy"
+                        alt="Наши тренеры.">
+                    </picture>
+                  </div>
+                  <div class="coachеs__info">
+                    <h3>Мария Кетова</h3>
+                    <div class="coachеs__info-inner">
+                    <span>CrossFit</span>
+                    <ul class="coachеs__info-list">
+                      <li class="coachеs__info-item">Certified Level 3 Trainer</li>
+                      <li class="coachеs__info-item">Победитель чемпионата России по CrossFit</li>
+                      <li class="coachеs__info-item">Опыт — 6 лет</li>
+                    </ul>
+                  </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="coachеs__button coachеs__button--prev swiper-button-prev"></div>
+              <div class="coachеs__button coachеs__button--next swiper-button-next"></div>
+            </div>
+
+          </div>
+
+        </div>
       </section>
 
       <section>
