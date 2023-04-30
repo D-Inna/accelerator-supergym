@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video';
 import {initTabs} from './modules/tabs/init-tabs';
-import {initSwiper} from './modules/slider';
+import {initSwiper, initReviewsSwiper} from './modules/slider';
 
 // ---------------------------------
 
@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initTabs();
     initSwiper();
+    initReviewsSwiper();
     const form = new Form();
     window.form = form;
     form.init();

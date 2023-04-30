@@ -1,6 +1,6 @@
 .subscriptions {
   background-color: $bg-color;
-  padding: 120px 103px;
+  padding: 120px 20px;
   position: relative;
 }
 
@@ -81,7 +81,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 360px);
-  gap: 40px;
+  gap: 4%;
   //////////////
   width: 100%;
 }
