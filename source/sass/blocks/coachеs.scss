@@ -107,10 +107,12 @@
         padding-right: 33px;
       }
 
-      /* stylelint-disable-next-line */
-     &::-webkit-scrollbar {
+      /* stylelint-disable */
+      &::-webkit-scrollbar {
         display: none;
       }
+
+      /* stylelint-enable */
     }
 
     .coachеs__info-inner {

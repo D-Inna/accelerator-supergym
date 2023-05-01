@@ -1,18 +1,29 @@
 .form {
   padding-top: 56px;
   padding-bottom: 70px;
-  background-color: $text-color;
+  background: linear-gradient(to right, $text-color 50%, $tel-color 50%);
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: $color-input;
+    top: 1px;
+  }
 }
 
 .form__wrapper {
   max-width: 1160px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 683px 683px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form__modal-auth {
   color: $tel-color;
+  background-color: $text-color;
 
   & h2 {
     font-family: $ff-alumni;
@@ -130,7 +141,7 @@
 
 .form__contacts {
   color: $text-color;
-  background-color: $tel-color;
+  padding-left: 120px;
 
   & h2 {
     font-family: $ff-alumni;

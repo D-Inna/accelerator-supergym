@@ -2805,7 +2805,8 @@ button,
   padding-top: 50px;
   overflow-y: scroll;
   scrollbar-width: none;
-  /* stylelint-disable-next-line */
+  /* stylelint-disable */
+  /* stylelint-enable */
 }
 
 .coachеs__item:hover .coachеs__info::-webkit-scrollbar,
@@ -3300,10 +3301,27 @@ button,
   right: 10px;
 }
 
+.reviews__slide-image img {
+  margin-top: 10px;
+  max-width: none;
+}
+
 .form {
   padding-top: 56px;
   padding-bottom: 70px;
-  background-color: #102654;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+  position: relative;
+}
+
+.form::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 1px;
+  background-color: #74819c;
+  top: 1px;
 }
 
 .form__wrapper {
@@ -3311,12 +3329,13 @@ button,
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 683px 683px;
-  grid-template-columns: 683px 683px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form__modal-auth {
   color: #ffffff;
+  background-color: #102654;
 }
 
 .form__modal-auth h2 {
@@ -3452,7 +3471,7 @@ button,
 
 .form__contacts {
   color: #102654;
-  background-color: #ffffff;
+  padding-left: 120px;
 }
 
 .form__contacts h2 {
@@ -3522,14 +3541,13 @@ button,
   min-width: 1160px;
   margin: 0 auto;
   background-color: #030a1a;
-  padding: 0 20px;
+  padding: 49px 20px;
 }
 
 .main-footer__container {
   margin: 0 auto;
   height: 100%;
   max-width: 1160px;
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3543,11 +3561,10 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin-right: 40px;
 }
 
 .main-footer__nav {
-  min-width: 594px;
+  max-width: 500px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -3587,9 +3604,9 @@ button,
 
 .user-list__link {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 19.5px;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
 }
 
@@ -3731,7 +3748,6 @@ button,
   .main-footer__logo {
     width: 38px;
     height: 20px;
-    margin-right: 25px;
   }
 
   .main-footer__nav {
@@ -3751,11 +3767,6 @@ button,
   .user-list__link {
     font-size: 14px;
     line-height: 17px;
-  }
-
-  .user-list__link--footer {
-    font-size: 12px;
-    line-height: 14px;
   }
 
   .social__list {
@@ -3901,10 +3912,6 @@ button,
 
   .user-list__link {
     line-height: 21px;
-  }
-
-  .user-list__link--footer {
-    font-size: 12px;
   }
 
   .social__list {
