@@ -6,14 +6,6 @@
   padding: 0;
   margin: 0;
   max-width: 128px;
-
-  @media (max-width: $vp-1199) {
-    column-gap: 22px;
-  }
-
-  @media (max-width: $vp-767) {
-    column-gap: 20px;
-  }
 }
 
 .social__network {

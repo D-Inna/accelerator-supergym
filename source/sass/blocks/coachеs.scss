@@ -23,7 +23,7 @@
   list-style-type: none;
   margin: 0;
   ///////////////////
-  row-gap: 3.5%;
+  column-gap: 3.5%;
 
   @media (max-width: $vp-1199) {
     gap: 0;

@@ -1,5 +1,9 @@
 .promo-games {
   padding: 120px 20px 106px;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 45px;
+  }
 }
 
 .promo-games__wrapper {
@@ -16,6 +20,12 @@
   gap: 50px;
   row-gap: 0;
 
+  @media (max-width: $vp-1199) {
+    padding: 51px 45px;
+    grid-template-columns: 117px auto;
+    column-gap: 29px;
+  }
+
   & h2 {
     font-family: $ff-alumni;
     font-weight: 600;
@@ -23,6 +33,11 @@
     line-height: 79px;
     grid-column: 1/2;
     margin: 0;
+
+    @media (max-width: $vp-1199) {
+      font-size: 48px;
+      line-height: 46px;
+    }
   }
 
   & p {
@@ -33,6 +48,12 @@
     grid-column: 1/-1;
     margin: 0;
     margin-bottom: 20px;
+
+    @media (max-width: $vp-1199) {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 18px;
+    }
   }
 }
 
@@ -46,6 +67,11 @@
     font-size: 18px;
     line-height: 27px;
     margin: 0;
+
+    @media (max-width: $vp-1199) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   & dd {
@@ -56,6 +82,11 @@
     margin: 0;
     display: flex;
     gap: 7px;
+
+    @media (max-width: $vp-1199) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   & small {
@@ -66,6 +97,12 @@
     position: relative;
     margin-bottom: 13px;
 
+    @media (max-width: $vp-1199) {
+      font-size: 10px;
+      line-height: 10px;
+      margin-top: 5px;
+    }
+
     &::before,
     &::after {
       position: absolute;
@@ -75,11 +112,22 @@
       height: 1px;
       width: 64px;
       background-color: $tel-color;
+
+      @media (max-width: $vp-1199) {
+        width: 42px;
+        top: -3px;
+        left: -20px;
+      }
     }
 
     &::after {
       width: 88px;
       top: 14vh;
+
+      @media (max-width: $vp-1199) {
+        width: 56px;
+        top: 15vh;
+      }
     }
   }
 }
@@ -95,4 +143,12 @@
   padding: 22px 114px;
   border: 4px solid $tel-color;
   margin-top: 5px;
+  text-align: center;
+
+  @media (max-width: $vp-1199) {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 16px;
+    border-width: 2px;
+  }
 }

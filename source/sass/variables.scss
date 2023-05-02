@@ -10,6 +10,9 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $text-color:                        #102654;
 $tel-color:                         #ffffff;
 $bg-color:                          #f8f9fc;
+$dark-red:                          #b80027;
+$maroon-red:                        #b80028;
+$middle-blue:                       #003d85;
 $title-color:                       #495a7d;
 $price:                             #103aae;
 $text-shadow:                       #e8e8e8;
@@ -39,9 +42,6 @@ $color-torch-red:                   #ff1553;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$header-desktop:                    linear-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$header-tablet:                     linear-gradient(from 155.49deg at 20.7% 35.74%, #b80028 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-$header-mobile:                     linear-gradient(from 167.26deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
 // Typography
 // ---------------------------------

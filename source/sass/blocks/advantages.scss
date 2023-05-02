@@ -1,11 +1,15 @@
 .advantages {
   background-color: $bg-color;
   padding: 97px 20px 140px;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 45px;
+  }
 }
 
 .advantages__wrapper {
   margin: 0 auto;
-  width: 1040px;
+  max-width: 1040px;
 
   & h2 {
     font-family: $ff-alumni;
@@ -16,6 +20,17 @@
     margin: 0;
     margin-bottom: 55px;
     text-align: center;
+
+    @media (max-width: $vp-1199) {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
 }
 
@@ -27,11 +42,16 @@
   grid-template-columns: 340px 240px 340px;
   column-gap: 60px;
   row-gap: 60px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }
 
 .advantages__item {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: min-content auto;
   gap: 18px;
 
   & span {
@@ -45,6 +65,12 @@
     grid-row: 1/2;
     grid-column: 1/2;
     transform: translateY(-20px);
+
+    @media (max-width: $vp-1199) {
+      font-size: 58px;
+      line-height: 58px;
+      transform: translateY(0);
+    }
   }
 
   & small {
@@ -54,11 +80,17 @@
     grid-row: 1/2;
     grid-column: 1/2;
     padding-top: 70px;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 50px;
+    }
   }
 
-  &:last-child {
-    grid-column: 3/4;
-    grid-row: 2/3;
+  @media (min-width: $vp-1200) {
+    &:last-child {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
   }
 }
 
@@ -69,6 +101,11 @@
   & b {
     font-size: 22px;
     line-height: 33px;
+
+    @media (max-width: $vp-1199) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   & p {
@@ -78,6 +115,10 @@
     margin: 0;
     margin-top: 10px;
     padding: 0;
+
+    @media (max-width: $vp-1199) {
+      margin-top: 5px;
+    }
   }
 }
 
@@ -88,6 +129,14 @@
   grid-column: 2/3;
   grid-row: 1/3;
   position: relative;
+  grid-template-columns: 1fr;
+
+  @media (max-width: $vp-1199) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 45px;
+    margin: 0 118px;
+  }
 
   & span {
     font-family: $ff-roboto;
@@ -97,6 +146,7 @@
     display: block;
     text-align: center;
     color: $tel-color;
+    transform: translateY(0);
   }
 
   & b {
@@ -105,6 +155,12 @@
     text-align: center;
     display: block;
     margin-bottom: 50px;
+
+    @media (max-width: $vp-1199) {
+      font-size: 22px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
   }
 
   & p {
@@ -116,22 +172,24 @@
     padding: 0;
   }
 
-  &::after,
-  &::before {
-    position: absolute;
-    content: "";
-    width: 340px;
-    height: 2px;
-    background-color: $color-pink-red;
-    top: 50%;
-  }
+  @media (min-width: $vp-1200) {
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      background-color: $color-pink-red;
+      top: 50%;
+    }
 
-  &::after {
-    left: 22vw;
-  }
+    &::after {
+      left: 22vw;
+    }
 
-  &::before {
-    right: 22vw;
+    &::before {
+      right: 22vw;
+    }
   }
 }
 
