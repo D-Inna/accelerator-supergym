@@ -5,11 +5,19 @@
   @media (max-width: $vp-1199) {
     padding: 100px 45px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+  }
 }
 
 .advantages__wrapper {
   margin: 0 auto;
   max-width: 1040px;
+
+  @media (max-width: $vp-767) {
+    max-width: none;
+  }
 
   & h2 {
     font-family: $ff-alumni;
@@ -47,12 +55,21 @@
     grid-template-columns: 1fr 1fr;
     gap: 50px;
   }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .advantages__item {
   display: grid;
   grid-template-columns: min-content auto;
   gap: 18px;
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
 
   & span {
     font-family: $ff-roboto;
@@ -71,6 +88,10 @@
       line-height: 58px;
       transform: translateY(0);
     }
+
+    @media (max-width: $vp-767) {
+      text-align: center;
+    }
   }
 
   & small {
@@ -83,6 +104,10 @@
 
     @media (max-width: $vp-1199) {
       padding-top: 50px;
+    }
+
+    @media (max-width: $vp-767) {
+      text-align: center;
     }
   }
 
@@ -97,6 +122,12 @@
 .advantages__wrapper-info {
   grid-column: 2/3;
   grid-row: 1/2;
+
+  @media (max-width: $vp-767) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+  }
 
   & b {
     font-size: 22px;
@@ -138,6 +169,13 @@
     margin: 0 118px;
   }
 
+  @media (max-width: $vp-767) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 50px 20px;
+    margin: 0;
+  }
+
   & span {
     font-family: $ff-roboto;
     font-weight: 700;
@@ -160,6 +198,10 @@
       font-size: 22px;
       line-height: 33px;
       margin-bottom: 30px;
+    }
+
+    @media (max-width: $vp-767) {
+      margin-bottom: 25px;
     }
   }
 

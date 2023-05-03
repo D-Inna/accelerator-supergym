@@ -37,7 +37,7 @@ const initSwiper = () => {
       1300: {
         slidesPerView: 4,
         slidesPerGroup: 1,
-        // spaceBetween: 40,
+        //spaceBetween: 40,
       },
     },
   });

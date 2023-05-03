@@ -113,7 +113,7 @@
   margin: 0 auto;
 
   & img {
-    @media (max-width: $vp-1199) {
+    @media (min-width: $vp-768) {
       width: auto;
     }
   }
@@ -135,6 +135,7 @@
     bottom: 0;
     display: block;
     margin-top: 40px;
+    width: 100%;
   }
 }
 
@@ -151,8 +152,8 @@
   }
 
   @media (max-width: $vp-767) {
-    left: 38%;
-    bottom: 38px;
+    left: 38vw;
+    bottom: 16vw;
   }
 
   &:hover {
@@ -173,5 +174,12 @@
     height: 167px;
     left: 30%;
     bottom: -80px;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 13vw;
+    bottom: 0;
+    width: 70vw;
+    height: 50vw;
   }
 }

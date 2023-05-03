@@ -1,6 +1,10 @@
 .reviews {
   padding-bottom: 120px;
 
+  @media (max-width: $vp-767) {
+    padding-bottom: 70px;
+  }
+
   & h2 {
     font-family: $ff-alumni;
     font-weight: 600;
@@ -8,12 +12,19 @@
     line-height: 64px;
     color: $text-color;
     text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
   }
 }
 
 .reviews__swiper {
   width: 672px;
   margin: 0 auto;
+
+  @media (max-width: $vp-767) {
+    width: 96vw;
+    margin: 0;
+  }
 }
 
 .reviews__slide {
@@ -30,18 +41,55 @@
   gap: 28px;
   width: 560px;
   transform: translateX(50px);
+
+  @media (max-width: $vp-1199) {
+    width: 566px;
+  }
+
+  @media (max-width: $vp-767) {
+    //width: 226px;
+    width: 71vw;
+    padding: 40px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.reviews__slide-image {
+  @media (max-width: $vp-767) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 }
 
 .reviews__slide-info {
   font-family: $ff-roboto;
   color: $tel-color;
 
+  @media (max-width: $vp-767) {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-columns: 69px auto;
+    gap: 15px;
+    grid-template-areas:
+      ". title"
+      "text text";
+  }
+
   & h3 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     margin: 0;
     margin-bottom: 25px;
+
+    @media (max-width: $vp-767) {
+      //margin-bottom: 20px;
+      // transform: translate(80px, -80px);
+      // margin: 0;
+      grid-area: title;
+    }
   }
 
   & p {
@@ -49,6 +97,12 @@
     font-size: 16px;
     line-height: 22px;
     margin: 0;
+
+    @media (max-width: $vp-767) {
+      text-align: center;
+      ///////////////
+      grid-area: text;
+    }
   }
 }
 
@@ -69,15 +123,32 @@
     border-top: none;
     border-right: none;
     transform: rotate(45deg);
+
+    @media (max-width: $vp-767) {
+      width: 17px;
+      height: 19px;
+      left: 15px;
+    }
   }
 }
 
 .reviews__button--next::before {
   transform: rotate(222deg);
   right: 10px;
+
+  @media (max-width: $vp-767) {
+    right: -4px;
+    left: auto;
+  }
 }
 
 .reviews__slide-image img {
   margin-top: 10px;
   max-width: none;
+
+  @media (max-width: $vp-767) {
+    width: 68px;
+    height: 68px;
+    margin: 0;
+  }
 }

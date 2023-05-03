@@ -19,9 +19,15 @@
   }
 }
 
+.coachеs__slider {
+  max-width: 1260px;
+}
+
 .coachеs__list {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  max-width: 1160px;
   ///////////////////
   column-gap: 3.5%;
 
@@ -66,10 +72,8 @@
 
 .coachеs__item {
   display: grid;
-  // max-width: 260px;
-  // max-height: 294px;
-  width: 260px;
-  height: 294px;
+  max-width: 260px;
+  max-height: 294px;
 
   @media (max-width: $vp-1199) {
     max-width: 268px;
@@ -236,7 +240,7 @@
   }
 
   &--next {
-    left: 91vw;
+    left: 90vw;
     transform: translateX(10px);
 
     &::before {

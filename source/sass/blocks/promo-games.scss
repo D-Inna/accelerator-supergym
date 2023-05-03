@@ -164,3 +164,10 @@
     border-width: 2px;
   }
 }
+
+.promo-games__wrapper-image img {
+  @media (max-width: $vp-767) {
+    width: 100%;
+    max-width: none;
+  }
+}
