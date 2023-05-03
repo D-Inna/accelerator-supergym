@@ -6,6 +6,10 @@
   @media (max-width: $vp-1199) {
     padding: 100px 163px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+  }
 }
 
 .subscriptions__wrapper {
@@ -13,6 +17,10 @@
   width: 100%;
   margin: 0 auto;
   max-width: 1160px;
+
+  @media (max-width: $vp-1199) {
+    max-width: none;
+  }
 
   & h2 {
     font-family: $ff-alumni;
@@ -32,6 +40,7 @@
     @media (max-width: $vp-767) {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -41,8 +50,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 46px;
+  row-gap: 46px;
   justify-content: center;
   position: relative;
+
+  @media (max-width: $vp-1199) {
+    gap: 54px;
+    row-gap: 54px;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 28px;
+    row-gap: 28px;
+  }
 
   &::before {
     position: absolute;
@@ -110,6 +130,7 @@
   display: grid;
   grid-template-columns: repeat(3, 360px);
   gap: 4%;
+  row-gap: 40px;
   //////////////
   width: 100%;
 
@@ -121,6 +142,10 @@
 .subscriptions__item {
   background-color: #ffffff;
   padding: 68px 77px;
+
+  @media (max-width: $vp-767) {
+    padding: 55px 42px;
+  }
 
   & h3 {
     font-family: $ff-roboto;
@@ -258,5 +283,9 @@
 
   @media (max-width: $vp-1199) {
     bottom: -107px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
   }
 }

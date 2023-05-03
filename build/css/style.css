@@ -2237,12 +2237,11 @@ button,
 
 .header__info h1 {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 92px;
   line-height: 110px;
   color: #ffffff;
   margin: 0;
-  letter-spacing: 0.05em;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2250,6 +2249,7 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  letter-spacing: 0.5px;
 }
 
 .header__info h2 {
@@ -2419,6 +2419,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 46px;
+  row-gap: 46px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2479,6 +2480,7 @@ button,
   -ms-grid-columns: (360px)[3];
   grid-template-columns: repeat(3, 360px);
   gap: 4%;
+  row-gap: 40px;
   width: 100%;
 }
 
@@ -3823,8 +3825,10 @@ button,
   }
 
   .promo__icon {
-    left: 42%;
-    bottom: -54px;
+    left: 44%;
+    bottom: -44px;
+    width: 73px;
+    height: 73px;
   }
 
   .promo__video {
@@ -3838,9 +3842,18 @@ button,
     padding: 100px 163px;
   }
 
+  .subscriptions__wrapper {
+    max-width: none;
+  }
+
   .subscriptions__wrapper h2 {
     font-size: 42px;
     line-height: 50px;
+  }
+
+  .subscriptions__tabs {
+    gap: 54px;
+    row-gap: 54px;
   }
 
   .subscriptions__tabs::before {
@@ -4175,7 +4188,7 @@ button,
   }
 
   .header__container {
-    padding: 15px 15px 0;
+    padding: 20px 15px 80px;
     max-width: 737px;
   }
 
@@ -4190,9 +4203,34 @@ button,
     line-height: 24px;
   }
 
+  .header__info {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-grid-rows: 40px 180px 60px;
+    grid-template-rows: 40px 180px 60px;
+    margin-right: 0;
+  }
+
+  .header__info h1 {
+    -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+
   .header__info h2 {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .header__info span {
+    margin-top: 75px;
+  }
+
+  .header__link-info {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    width: 100%;
   }
 
   .header__image-container img {
@@ -4204,19 +4242,64 @@ button,
     min-width: 320px;
   }
 
+  .promo {
+    padding: 70px 0;
+  }
+
+  .promo__info {
+    padding: 0 15px;
+  }
+
   .promo__info h2 {
     font-size: 32px;
     line-height: 38px;
+    text-align: left;
+  }
+
+  .promo__info h3 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .promo__info span {
+    text-align: left;
+  }
+
+  .promo__image {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: block;
+    margin-top: 40px;
+  }
+
+  .promo__icon {
+    left: 38%;
+    bottom: 38px;
+  }
+
+  .subscriptions {
+    padding: 70px 15px;
   }
 
   .subscriptions__wrapper h2 {
     font-size: 32px;
     line-height: 38px;
+    margin-bottom: 35px;
+  }
+
+  .subscriptions__tabs {
+    gap: 28px;
+    row-gap: 28px;
   }
 
   .subscriptions__tabs-button {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .subscriptions__item {
+    padding: 55px 42px;
   }
 
   .subscriptions__item h3 {
@@ -4237,6 +4320,25 @@ button,
   .subscriptions__price svg {
     width: 24px;
     height: 33px;
+  }
+
+  .subscriptions__image {
+    display: none;
+  }
+
+  .promo-games {
+    padding: 70px 15px;
+  }
+
+  .promo-games__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promo-games__inner {
+    padding: 50px 44px;
   }
 
   .coachеs__slider {

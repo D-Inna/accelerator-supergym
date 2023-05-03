@@ -4,6 +4,10 @@
   @media (max-width: $vp-1199) {
     padding: 100px 45px 183px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+  }
 }
 
 .promo__wrapper {
@@ -25,6 +29,10 @@
   @media (max-width: $vp-1199) {
     margin: 0;
     padding: 0 8%;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 15px;
   }
 
   & h2 {
@@ -49,6 +57,7 @@
     @media (max-width: $vp-767) {
       font-size: 32px;
       line-height: 38px;
+      text-align: left;
     }
   }
 
@@ -67,6 +76,11 @@
       margin-bottom: 50px;
       text-align: center;
     }
+
+    @media (max-width: $vp-767) {
+      text-align: left;
+      margin-bottom: 40px;
+    }
   }
 
   & span {
@@ -80,6 +94,10 @@
     @media (max-width: $vp-1199) {
       display: block;
       text-align: center;
+    }
+
+    @media (max-width: $vp-767) {
+      text-align: left;
     }
   }
 }
@@ -110,6 +128,14 @@
     left: 30%;
     bottom: -80px;
   }
+
+  @media (max-width: $vp-767) {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    display: block;
+    margin-top: 40px;
+  }
 }
 
 .promo__icon {
@@ -118,8 +144,15 @@
   bottom: -54px;
 
   @media (max-width: $vp-1199) {
-    left: 42%;
-    bottom: -54px;
+    left: 44%;
+    bottom: -44px;
+    width: 73px;
+    height: 73px;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 38%;
+    bottom: 38px;
   }
 
   &:hover {

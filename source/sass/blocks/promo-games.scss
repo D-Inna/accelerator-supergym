@@ -4,11 +4,19 @@
   @media (max-width: $vp-1199) {
     padding: 100px 45px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px;
+  }
 }
 
 .promo-games__wrapper {
   display: flex;
   justify-content: center;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+  }
 }
 
 .promo-games__inner {
@@ -24,6 +32,10 @@
     padding: 51px 45px;
     grid-template-columns: 117px auto;
     column-gap: 29px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 50px 44px;
   }
 
   & h2 {
