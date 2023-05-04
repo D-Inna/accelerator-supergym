@@ -5,8 +5,8 @@ const initSwiper = () => {
     initialSlide: 0,
 
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.coachеs__button--next',
+      prevEl: '.coachеs__button--prev',
     },
 
     keyboard: {
@@ -14,6 +14,8 @@ const initSwiper = () => {
       onlyInViewport: false,
       pageUpDown: true,
     },
+
+    maxBackfaceHiddenSlides: 0,
 
     breakpoints: {
       // when window width is >= 320px
@@ -34,10 +36,10 @@ const initSwiper = () => {
         // spaceBetween: 40,
       },
       // when window width is >= 1300px
-      1300: {
+      1280: {
         slidesPerView: 4,
-        slidesPerGroup: 1,
-        //spaceBetween: 40,
+        slidesPerGroup: 4,
+        // spaceBetween: 40,
       },
     },
   });
