@@ -163,7 +163,7 @@
 }
 
 .promo__video {
-  width: 364px;
+  width: 366px;
   height: 228px;
   position: absolute;
   bottom: -112px;
@@ -177,9 +177,24 @@
   }
 
   @media (max-width: $vp-767) {
-    left: 13vw;
+    left: 0;
     bottom: 0;
-    width: 70vw;
-    height: 50vw;
+    width: 100%;
+    height: 34%;
+  }
+}
+
+.promo__video iframe {
+  width: 366px;
+  height: 228px;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    height: 100%;
   }
 }

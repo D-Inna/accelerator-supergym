@@ -118,7 +118,6 @@
 }
 
 .subscriptions__wrapper-list {
-  /////////////////
   transition: height 0.3s;
 }
 
@@ -136,12 +135,16 @@
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr;
+    position: relative;
   }
 }
 
 .subscriptions__item {
   background-color: #ffffff;
   padding: 68px 77px;
+  position: relative;
+  // max-width: 360px;
+  // min-height: 448px;
 
   @media (max-width: $vp-767) {
     padding: 55px 42px;
@@ -183,24 +186,24 @@
       line-height: 24px;
     }
   }
+}
 
-  &:focus,
-  &:focus-within,
-  &:hover {
-    outline: none;
+.subscriptions__item:focus,
+.subscriptions__item:focus-within,
+.subscriptions__item:hover {
+  outline: none;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      border: 7px solid $border-red;
-      border-image: linear-gradient(to left top, $border-blue, $border-red);
-      border-image-slice: 1;
-      pointer-events: none;
-    }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 7px solid $border-red;
+    border-image: linear-gradient(to left top, $border-blue, $border-red);
+    border-image-slice: 1;
+    pointer-events: none;
   }
 }
 

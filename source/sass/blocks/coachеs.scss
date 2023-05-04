@@ -126,39 +126,39 @@
     max-width: 226px;
     height: 274px;
   }
+}
 
-  &:hover,
-  &:focus,
-  &:focus-within {
-    .coachеs__info {
-      background-color: $color-bg-slider;
-      display: block;
-      max-height: inherit;
-      padding-top: 51px;
-      overflow-y: scroll;
-      scrollbar-width: none;
+.coachеs__item:hover,
+.coachеs__item:focus,
+.coachеs__item:focus-within {
+  .coachеs__info {
+    background-color: $color-bg-slider;
+    display: block;
+    max-height: inherit;
+    padding-top: 51px;
+    overflow-y: scroll;
+    scrollbar-width: none;
 
-      @media (max-width: $vp-1199) {
-        padding-right: 40px;
-      }
-
-      @media (max-width: $vp-767) {
-        padding-right: 33px;
-        padding-top: 41px;
-      }
-
-      /* stylelint-disable */
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* stylelint-enable */
+    @media (max-width: $vp-1199) {
+      padding-right: 40px;
     }
 
-    .coachеs__info-inner {
-      display: block;
-      transform: translateY(-4px);
+    @media (max-width: $vp-767) {
+      padding-right: 33px;
+      padding-top: 41px;
     }
+
+    /* stylelint-disable */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* stylelint-enable */
+  }
+
+  .coachеs__info-inner {
+    display: block;
+    transform: translateY(-4px);
   }
 }
 
@@ -260,7 +260,6 @@
   display: block;
   color: transparent;
   margin: 0;
-  //border: none;
 
   &::before {
     content: "";
