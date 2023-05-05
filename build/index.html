@@ -7,7 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="./fonts/alumni-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/alumni-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
@@ -22,7 +31,7 @@
         </nav>
         <div class="header__wrapper">
           <div class="header__info">
-            <h1>Фитнес <br> центр</h1>
+            <h1>ФИТНЕС <br> ЦЕНТР</h1>
             <h2>Омск</h2>
             <span>Тренажёрный зал <br>
               Групповые занятия <br>
@@ -89,123 +98,122 @@
       </section>
 
       <section class="subscriptions" id="subscriptions">
-        <div class="subscriptions__wrapper" data-tabs="parent" data-delay="300" data-height="max">
+        <div class="subscriptions__wrapper" data-tabs="parent" data-delay="300">
           <h2>Абонементы</h2>
-          <div class="subscriptions__tabs" data-tabs="controls">
-            <button class="subscriptions__tabs-button" type="button" data-tabs="control">1&nbsp;месяц</button>
-            <button class="subscriptions__tabs-button" type="button" data-tabs="control">6&nbsp;месяцев</button>
-            <button class="subscriptions__tabs-button" type="button" data-tabs="control">12&nbsp;месяцев</button>
-          </div>
-          <div class="subscriptions__wrapper-list" data-tabs="content">
-            <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item" tabindex="0">
-                <h3>С&nbsp;тренером</h3>
-                <h4>12&nbsp;занятий</h4>
-                <div class="subscriptions__price">
-                  <span data-text="5000">5000</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Дневной</h3>
-                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="1700">1700</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Полный день</h3>
-                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="2700">2700</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-            </ul>
+            <div class="subscriptions__tabs" data-tabs="controls">
+              <button class="subscriptions__tabs-button" type="button" data-tabs="control">1&nbsp;месяц</button>
+              <button class="subscriptions__tabs-button" type="button" data-tabs="control">6&nbsp;месяцев</button>
+              <button class="subscriptions__tabs-button" type="button" data-tabs="control">12&nbsp;месяцев</button>
+            </div>
+            <div class="subscriptions__wrapper-list" data-tabs="content">
+              <ul class="subscriptions__list" data-tabs="element">
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>С&nbsp;тренером</h3>
+                  <h4>12&nbsp;занятий</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="5000">5000</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Дневной</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="1700">1700</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Полный день</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="2700">2700</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+              </ul>
 
-            <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item" tabindex="0">
-                <h3>С&nbsp;тренером</h3>
-                <h4>32&nbsp;занятий</h4>
-                <div class="subscriptions__price">
-                  <span data-text="29900">29900</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Дневной</h3>
-                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="9900">9900</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Полный день</h3>
-                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="15900">15900</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-            </ul>
+              <ul class="subscriptions__list" data-tabs="element">
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>С&nbsp;тренером</h3>
+                  <h4>32&nbsp;занятий</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="29900">29900</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Дневной</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="9900">9900</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Полный день</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="15900">15900</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+              </ul>
 
-            <ul class="subscriptions__list" data-tabs="element">
-              <li class="subscriptions__item" tabindex="0">
-                <h3>С&nbsp;тренером</h3>
-                <h4>60&nbsp;занятий</h4>
-                <div class="subscriptions__price">
-                  <span data-text="55000">55000</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Дневной</h3>
-                <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="17000">17000</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-              <li class="subscriptions__item" tabindex="0">
-                <h3>Полный день</h3>
-                <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
-                <div class="subscriptions__price">
-                  <span data-text="22900">22900</span>
-                  <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
-                    <use href="./img/sprite.svg#rub"></use>
-                  </svg>
-                </div>
-                <a class="subscriptions__link" href="#">купить абонемент</a>
-              </li>
-            </ul>
-          </div>
-
+              <ul class="subscriptions__list" data-tabs="element">
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>С&nbsp;тренером</h3>
+                  <h4>60&nbsp;занятий</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="55000">55000</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Дневной</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;17:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="17000">17000</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+                <li class="subscriptions__item" tabindex="0">
+                  <h3>Полный день</h3>
+                  <h4>с&nbsp;8:00 до&nbsp;22:00</h4>
+                  <div class="subscriptions__price">
+                    <span data-text="22900">22900</span>
+                    <svg class="subscriptions__price-icon" aria-hidden="true" focusable="false" width="30" height="42">
+                      <use href="./img/sprite.svg#rub"></use>
+                    </svg>
+                  </div>
+                  <a class="subscriptions__link" href="#">купить абонемент</a>
+                </li>
+              </ul>
+            </div>
 
           <picture>
             <source type="image/webp" media="(max-width: 1199px)"
@@ -213,7 +221,7 @@
             <source type="image/webp" srcset="./img/inventory.webp 1x, ./img/inventory@2x.webp 2x">
             <source media="(max-width: 1199px)"
               srcset="./img/inventory-tablet.png 1x, ./img/inventory-tablet@2x.png 2x">
-            <img class="subscriptions__image" src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="321"
+            <img class="subscriptions__image" src="./img/inventory.png" srcset="./img/inventory@2x.png 2x" width="296"
               height="384" loading="lazy" alt="Инвентарь тренажерного зала.">
           </picture>
         </div>

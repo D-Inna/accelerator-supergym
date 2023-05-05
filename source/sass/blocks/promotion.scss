@@ -2,11 +2,11 @@
   padding: 100px 20px 117px;
 
   @media (max-width: $vp-1199) {
-    padding: 95px 45px;
+    padding: 86px 45px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 68px 15px;
   }
 
   & h2 {
@@ -22,7 +22,7 @@
     @media (max-width: $vp-1199) {
       font-size: 42px;
       line-height: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
 
     @media (max-width: $vp-767) {
@@ -41,7 +41,7 @@
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
+    gap: 30px;
   }
 
   @media (max-width: $vp-767) {
@@ -75,7 +75,7 @@
 .promotion__info {
   background-color: $link-red;
   color: $tel-color;
-  padding: 45px;
+  padding: 36px 45px 40px;
   width: 280px;
   font-family: $ff-roboto;
 
@@ -99,8 +99,8 @@
     margin-bottom: 35px;
 
     @media (max-width: $vp-767) {
-      margin-bottom: 30px;
-      margin-top: 19px;
+      margin-bottom: 25px;
+      margin-top: 10px;
     }
   }
 
@@ -109,10 +109,14 @@
     font-size: 18px;
     line-height: 25px;
     margin: 0;
-    padding-bottom: 175px;
+    padding-bottom: 180px;
+
+    @media (max-width: $vp-1199) {
+      padding-bottom: 186px;
+    }
 
     @media (max-width: $vp-767) {
-      padding-bottom: 40px;
+      padding-bottom: 29px;
     }
   }
 }
@@ -123,14 +127,14 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding-bottom: 3px;
   border-bottom: 1px solid $tel-color;
 }
 
 .promotion__description {
-  padding: 35px;
+  padding: 29px;
   border: 7px solid;
   border-image: linear-gradient(135deg, $border-red 0, $border-blue 100%) 30;
   color: $border;
@@ -146,7 +150,7 @@
   @media (max-width: $vp-767) {
     grid-column: 1/2;
     text-align: center;
-    padding: 46px 30px;
+    padding: 46px 30px 38px;
   }
 
   & h3 {
@@ -155,7 +159,15 @@
     font-size: 26px;
     line-height: 16px;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+
+    @media (max-width: $vp-1199) {
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $vp-767) {
+      margin-bottom: 9px;
+    }
   }
 
   & p {
@@ -164,10 +176,14 @@
     font-size: 16px;
     line-height: 22px;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 61px;
+
+    @media (max-width: $vp-1199) {
+      padding-bottom: 43px;
+    }
 
     @media (max-width: $vp-767) {
-      padding-bottom: 35px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -178,6 +194,10 @@
   @media (max-width: $vp-1199) {
     grid-column: 2/3;
     grid-row: 2/3;
+
+    & p {
+      padding-bottom: 62px;
+    }
   }
 
   @media (max-width: $vp-767) {
