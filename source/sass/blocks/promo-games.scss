@@ -142,11 +142,12 @@
 
     &::after {
       width: 88px;
-      top: 14vh;
+      //top: 206%;
+      top: 6.3em;
 
       @media (max-width: $vp-1199) {
         width: 56px;
-        top: 15vh;
+        top: 5em;
       }
     }
   }

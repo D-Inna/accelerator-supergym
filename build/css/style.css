@@ -2766,7 +2766,7 @@ button,
 
 .promo-games__list small::after {
   width: 88px;
-  top: 14vh;
+  top: 6.3em;
 }
 
 .promo-games__link {
@@ -3927,7 +3927,8 @@ button,
   }
 
   .subscriptions__tabs::before {
-    left: 11%;
+    width: 77%;
+    left: 12%;
   }
 
   .subscriptions__tabs-button {
@@ -4010,7 +4011,7 @@ button,
 
   .promo-games__list small::after {
     width: 56px;
-    top: 15vh;
+    top: 5em;
   }
 
   .promo-games__link {
