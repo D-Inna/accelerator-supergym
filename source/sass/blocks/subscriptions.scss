@@ -13,7 +13,6 @@
 }
 
 .subscriptions__wrapper {
-  ///////////////
   width: 100%;
   margin: 0 auto;
   max-width: 1160px;
@@ -132,7 +131,6 @@
   grid-template-columns: repeat(3, 360px);
   gap: 3.5%;
   row-gap: 40px;
-  //////////////
   width: 100%;
 
   @media (max-width: $vp-1199) {
@@ -287,7 +285,7 @@
   &:hover,
   &:focus {
     border: none;
-    padding: 27px 45px;
+    padding: 25px 45px;
     color: $tel-color;
     background: linear-gradient(97.05deg, $link-red 17.6%, $link-blue 95.31%);
   }

@@ -2269,14 +2269,13 @@ button,
   margin-left: 140px;
 }
 
-.header__info p {
+.header__info span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   margin: 0;
-  padding: 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -2357,19 +2356,15 @@ button,
   margin-bottom: 39px;
 }
 
-.promo__info p {
+.promo__info span {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   color: #102654;
   margin: 0;
-  padding: 0;
-  margin-bottom: 8px;
-}
-
-.promo__info p:first-of-type {
   display: block;
+  margin-bottom: 8px;
 }
 
 .promo__wrapper-image {
@@ -2614,7 +2609,7 @@ button,
 .subscriptions__link:hover,
 .subscriptions__link:focus {
   border: none;
-  padding: 25px 45px;
+  padding: 27px 45px;
   color: #ffffff;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -2890,10 +2885,11 @@ button,
   display: none;
 }
 
-.coachеs__info-inner p {
+.coachеs__info-inner span {
   font-size: 16px;
   line-height: 24px;
   color: #b6bdcc;
+  display: block;
   margin: 0;
   margin-bottom: 35px;
   text-align: center;
@@ -3190,14 +3186,14 @@ button,
   font-family: "Roboto Condensed", "Arial", sans-serif;
 }
 
-.promotion__info h3 {
+.promotion__info b {
   font-weight: 700;
   font-size: 28px;
   line-height: 43px;
   margin: 0;
 }
 
-.promotion__info span {
+.promotion__info h3 {
   font-weight: 700;
   font-size: 70px;
   line-height: 43px;
@@ -3878,9 +3874,13 @@ button,
     text-align: center;
   }
 
-  .promo__info p {
+  .promo__info span {
+    display: block;
     text-align: center;
     margin-bottom: -6px;
+  }
+
+  .promo__info span[data-text=text-desktop] {
     display: none;
   }
 
@@ -4391,7 +4391,7 @@ button,
     letter-spacing: 0;
   }
 
-  .header__info p {
+  .header__info span {
     margin-top: 58px;
   }
 
@@ -4433,7 +4433,7 @@ button,
     margin-top: 4px;
   }
 
-  .promo__info p {
+  .promo__info span {
     text-align: left;
   }
 
@@ -4700,7 +4700,7 @@ button,
     text-align: center;
   }
 
-  .promotion__info span {
+  .promotion__info h3 {
     margin-bottom: 25px;
     margin-top: 10px;
   }
