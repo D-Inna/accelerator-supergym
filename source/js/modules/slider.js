@@ -28,6 +28,7 @@ const initSwiper = () => {
         slidesPerView: 2,
         slidesPerGroup: 2,
         spaceBetween: 30,
+        initialSlide: 2,
       },
       // when window width is >= 1200px
       1200: {

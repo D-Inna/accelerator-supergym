@@ -3,16 +3,16 @@
   min-width: 1160px;
   margin: 0 auto;
   background-color: $bg-footer;
-  padding: 44px 20px 36px;
+  padding: 42px 20px 34px;
 
   @media (max-width: $vp-1199) {
     min-width: 768px;
-    padding: 47px 45px;
+    padding: 45px 45px;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
-    padding: 50px 15px;
+    padding: 50px 15px 45px;
     margin: 0;
   }
 }

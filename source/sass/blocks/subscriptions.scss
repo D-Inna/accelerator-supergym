@@ -1,14 +1,14 @@
 .subscriptions {
   background-color: $bg-color;
-  padding: 120px 20px;
+  padding: 122px 20px 120px;
   position: relative;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 163px;
+    padding: 98px 163px 100px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 64px 15px 70px;
   }
 }
 
@@ -29,18 +29,22 @@
     color: $text-color;
     text-align: center;
     margin: 0;
-    margin-bottom: 12px;
-    letter-spacing: 2px;
+    margin-bottom: 16px;
+    letter-spacing: 1.6px;
 
     @media (max-width: $vp-1199) {
       font-size: 42px;
       line-height: 56px;
+      letter-spacing: 1.5px;
+      transform: translateX(-6px);
     }
 
     @media (max-width: $vp-767) {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 19px;
+      transform: translateX(-5px);
+      letter-spacing: 1px;
+      margin-bottom: 21px;
     }
   }
 }
@@ -56,26 +60,31 @@
 
   @media (max-width: $vp-1199) {
     gap: 44px;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
   }
 
   @media (max-width: $vp-767) {
     gap: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   &::before {
     position: absolute;
     content: "";
     left: 36%;
-    bottom: -15px;
+    bottom: -12px;
     height: 2px;
-    width: 341px;
+    width: 334px;
     background-color: $tabs-line-grey;
 
     @media (max-width: $vp-1199) {
-      width: 77%;
+      width: 76%;
       left: 12%;
+    }
+
+    @media (max-width: $vp-767) {
+      bottom: -14px;
+      width: 88%;
     }
   }
 }
@@ -111,11 +120,20 @@
       position: absolute;
       content: "";
       left: 5%;
-      bottom: -15px;
+      bottom: -12px;
       height: 2px;
       width: 100%;
       background-color: $border-red;
+
+      @media (max-width: $vp-767) {
+        bottom: -14px;
+      }
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
   }
 }
 
@@ -153,7 +171,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 50px 42px;
+    padding: 50px 42px 53px;
   }
 
   & h3 {
@@ -165,12 +183,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
-    letter-spacing: 1px;
-
-    @media (max-width: $vp-1199) {
-      font-size: 26px;
-      line-height: 28px;
-    }
+    letter-spacing: 0;
 
     @media (max-width: $vp-767) {
       font-size: 22px;
@@ -187,12 +200,7 @@
     text-align: center;
     margin: 0;
     margin-bottom: 66px;
-    letter-spacing: 1px;
-
-    @media (max-width: $vp-1199) {
-      font-size: 16px;
-      line-height: 24px;
-    }
+    letter-spacing: 0;
 
     @media (max-width: $vp-767) {
       margin-bottom: 53px;
@@ -226,6 +234,10 @@
   gap: 14px;
   margin-bottom: 35px;
 
+  @media (max-width: $vp-767) {
+    margin-bottom: 32px;
+  }
+
   & span {
     font-family: $ff-roboto;
     font-weight: 700;
@@ -239,6 +251,7 @@
     @media (max-width: $vp-767) {
       font-size: 48px;
       line-height: 72px;
+      transform: translateX(3px);
     }
 
     &::before {
@@ -249,13 +262,15 @@
       font-size: 100px;
       line-height: 150px;
       color: $text-shadow;
-      top: -50px;
-      left: -30px;
+      top: -52px;
+      left: -22px;
       z-index: -1;
 
       @media (max-width: $vp-767) {
         font-size: 80px;
         line-height: 120px;
+        top: -44px;
+        left: -16px;
       }
     }
   }
@@ -277,10 +292,11 @@
   line-height: 14px;
   color: $text-color;
   text-transform: uppercase;
-  padding: 23px 45px;
+  padding: 23px 30px;
   border: 2px solid $border;
   display: block;
   text-align: center;
+  letter-spacing: 0.5px;
 
   &:hover,
   &:focus {
@@ -293,11 +309,11 @@
 
 .subscriptions__image {
   position: absolute;
-  bottom: -157px;
+  bottom: -150px;
   right: 0;
 
   @media (max-width: $vp-1199) {
-    bottom: -120px;
+    bottom: -124px;
     width: 346px;
   }
 

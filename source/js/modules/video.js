@@ -1,12 +1,27 @@
-const video = document.querySelector('.promo__video');
+const containerVideo = document.querySelector('.promo__container-video');
+const link = document.querySelector('.promo__link-video');
+const promoVideo = document.querySelector('[data-promo-video]');
+const buttonPlay = document.querySelector('.promo__icon');
 
-video.addEventListener('click', function () {
-  if (video.classList.contains('ready')) {
-    return;
+link.removeAttribute('href');
+
+const createIframe = (video) => {
+  const iframe = document.createElement('iframe');
+
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', video.dataset.src);
+
+  return iframe;
+};
+
+buttonPlay.addEventListener('click', () => {
+
+  if (promoVideo && containerVideo) {
+    const iframeVideo = createIframe(promoVideo);
+
+    link.remove();
+    buttonPlay.remove();
+    promoVideo.appendChild(iframeVideo);
   }
-  video.classList.add('ready');
-
-  const src = video.dataset.src;
-
-  video.insertAdjacentHTML('afterbegin', '<iframe src="' + src + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
 });

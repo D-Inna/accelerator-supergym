@@ -3,8 +3,8 @@
 
   @media (min-width: $vp-1200) {
     background: linear-gradient(to right, $text-color 50%, $tel-color 50%);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 67px;
+    padding-bottom: 62px;
 
     &::after {
       position: absolute;
@@ -38,7 +38,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 64px 15px 61px;
+    padding: 64px 15px 68px;
   }
 
   & h2 {
@@ -47,20 +47,22 @@
     font-size: 54px;
     line-height: 64px;
     margin: 0;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
     letter-spacing: 1.5px;
 
     @media (max-width: $vp-1199) {
       font-weight: 700;
       font-size: 42px;
       line-height: 50px;
+      margin-bottom: 35px;
     }
 
     @media (max-width: $vp-767) {
       font-weight: 600;
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 36px;
+      letter-spacing: 1px;
+      margin-bottom: 39px;
     }
   }
 
@@ -68,7 +70,7 @@
     display: grid;
     grid-template-columns: 190px 190px;
     gap: 30px;
-    row-gap: 20px;
+    row-gap: 27px;
     font-family: $ff-roboto;
     font-size: 14px;
     line-height: 16px;
@@ -81,12 +83,11 @@
     @media (max-width: $vp-767) {
       display: flex;
       flex-direction: column;
-      gap: 33px;
-      //grid-template-columns: 1fr;
+      gap: 35px;
     }
 
     & button {
-      padding: 21px;
+      padding: 17px;
       border: 3px solid $tel-color;
       color: $tel-color;
       font-weight: 700;
@@ -100,7 +101,6 @@
 
       @media (max-width: $vp-767) {
         width: 100%;
-        //grid-column: 1/2;
       }
 
       &:hover,
@@ -128,7 +128,7 @@
     border: none;
     border-bottom: 1px solid $color-input;
     width: 190px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     color: $tel-color;
 
     @media (max-width: $vp-1199) {
@@ -203,11 +203,11 @@
   padding-left: 120px;
 
   @media (max-width: $vp-1199) {
-    padding: 61px 133px 63px;
+    padding: 62px 129px 61px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 65px 15px 67px;
+    padding: 65px 15px 63px;
   }
 
   & h2 {
@@ -215,17 +215,20 @@
     font-weight: 600;
     font-size: 54px;
     line-height: 64px;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: -8px 0 36px;
+    letter-spacing: 1.6px;
 
     @media (max-width: $vp-1199) {
       font-size: 42px;
       line-height: 50px;
+      margin: 0 0 33px 4px;
     }
 
     @media (max-width: $vp-767) {
       font-size: 32px;
       line-height: 38px;
+      margin-left: 0;
+      letter-spacing: 1px;
     }
   }
 }
@@ -236,9 +239,10 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 120px;
+  column-gap: 122px;
   row-gap: 17px;
   position: relative;
+  padding-left: 5px;
 
   @media (max-width: $vp-1199) {
     column-gap: 97px;
@@ -248,7 +252,8 @@
 
   @media (max-width: $vp-767) {
     grid-template-columns: 1fr;
-    row-gap: 23px;
+    row-gap: 20px;
+    padding-left: 0;
   }
 
   & h3 {
@@ -272,6 +277,7 @@
     line-height: 21px;
     margin: 0;
     padding: 0;
+    letter-spacing: -0.1px;
 
     @media (max-width: $vp-1199) {
       font-size: 18px;
@@ -307,4 +313,26 @@
   line-height: 21px;
   margin: 0;
   color: $text-color;
+
+  @media (max-width: $vp-1199) {
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.form__contacts-item {
+  @media (max-width: $vp-767) {
+    &--tel {
+      order: 3;
+    }
+
+    &--work {
+      order: 2;
+    }
+
+    &--email {
+      order: 4;
+    }
+  }
 }
