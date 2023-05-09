@@ -179,13 +179,15 @@
   @media (max-width: $vp-1199) {
     font-size: 10px;
     line-height: 12px;
-    padding: 11px;
+    padding: 12px 12px 6px 11px;
     border-width: 2px;
-    margin: 0;
+    transform: translateX(-1px);
+    margin: 0 -3px 4.5px 0;
   }
 
   @media (max-width: $vp-767) {
     padding: 12px;
+    margin-bottom: 0;
   }
 
   &:hover,

@@ -15,13 +15,15 @@ const createIframe = (video) => {
   return iframe;
 };
 
-buttonPlay.addEventListener('click', () => {
 
-  if (promoVideo && containerVideo) {
-    const iframeVideo = createIframe(promoVideo);
+if (buttonPlay) {
+  buttonPlay.addEventListener('click', () => {
+    if (promoVideo && containerVideo) {
+      const iframeVideo = createIframe(promoVideo);
 
-    link.remove();
-    buttonPlay.remove();
-    promoVideo.appendChild(iframeVideo);
-  }
-});
+      link.remove();
+      buttonPlay.remove();
+      promoVideo.appendChild(iframeVideo);
+    }
+  });
+}

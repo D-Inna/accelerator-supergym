@@ -22,6 +22,7 @@ const initSwiper = () => {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        initialSlide: 2,
       },
       // when window width is >= 768px
       768: {

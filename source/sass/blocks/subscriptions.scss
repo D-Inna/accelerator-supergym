@@ -84,7 +84,8 @@
 
     @media (max-width: $vp-767) {
       bottom: -14px;
-      width: 88%;
+      width: 97%;
+      left: 2%;
     }
   }
 }
@@ -153,7 +154,6 @@
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr;
-    position: relative;
   }
 
   @media (max-width: $vp-767) {

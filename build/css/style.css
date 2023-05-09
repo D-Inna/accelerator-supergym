@@ -4097,7 +4097,6 @@ button,
   .subscriptions__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    position: relative;
   }
 
   .subscriptions__item {
@@ -4170,9 +4169,12 @@ button,
   .promo-games__link {
     font-size: 10px;
     line-height: 12px;
-    padding: 11px;
+    padding: 12px 12px 6px 11px;
     border-width: 2px;
-    margin: 0;
+    -webkit-transform: translateX(-1px);
+    -ms-transform: translateX(-1px);
+    transform: translateX(-1px);
+    margin: 0 -3px 4.5px 0;
   }
 
   .coachеs__wrapper {
@@ -4557,7 +4559,7 @@ button,
   }
 
   .header__container {
-    padding: 16px 15px 86px;
+    padding: 16px 15px 84px;
     max-width: 737px;
   }
 
@@ -4606,7 +4608,8 @@ button,
     -ms-grid-column-span: 2;
     grid-column: 1/3;
     width: 100%;
-    margin-top: 18px;
+    padding: 21px 16px;
+    margin-top: 15.5px;
     margin-right: 5px;
   }
 
@@ -4705,7 +4708,8 @@ button,
 
   .subscriptions__tabs::before {
     bottom: -14px;
-    width: 88%;
+    width: 97%;
+    left: 2%;
   }
 
   .subscriptions__tabs-button {
@@ -4790,6 +4794,7 @@ button,
 
   .promo-games__link {
     padding: 12px;
+    margin-bottom: 0;
   }
 
   .promo-games__wrapper-image img {
