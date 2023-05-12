@@ -81,6 +81,14 @@
   position: relative;
   grid-column: 3/4;
 
+  @media (max-width: $vp-1199) {
+    grid-column: 2/3;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-column: 1/-1;
+  }
+
   &:nth-child(2n) {
     padding-left: 58px;
     grid-column: 1/2;

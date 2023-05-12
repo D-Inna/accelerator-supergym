@@ -4346,6 +4346,12 @@ button,
     row-gap: 43px;
   }
 
+  .advantages__item {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+
   .advantages__item:nth-child(2n) {
     padding-left: 31px;
   }
@@ -5081,6 +5087,10 @@ button,
     gap: 40px;
   }
 
+  .advantages__item {
+    grid-column: 1/-1;
+  }
+
   .advantages__item:nth-child(2n) span {
     left: 45%;
   }
@@ -5191,6 +5201,7 @@ button,
   }
 
   .promotion__info span {
+    margin: 0 auto;
     margin-bottom: 25px;
     margin-top: 10px;
   }

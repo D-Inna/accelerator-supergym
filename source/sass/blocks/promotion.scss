@@ -130,6 +130,7 @@
     max-width: 150px;
 
     @media (max-width: $vp-767) {
+      margin: 0 auto;
       margin-bottom: 25px;
       margin-top: 10px;
     }
