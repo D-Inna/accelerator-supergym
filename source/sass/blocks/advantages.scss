@@ -57,7 +57,7 @@
   grid-template-columns: 1fr 240px 1fr;
   column-gap: 60px;
   row-gap: 153px;
-  word-break: break-all;
+  grid-auto-flow: dense;
 
   @media (max-width: $vp-1024) {
     grid-template-columns: 1fr 1fr;
@@ -79,9 +79,11 @@
 
 .advantages__item {
   position: relative;
+  grid-column: 3/4;
 
   &:nth-child(2n) {
     padding-left: 58px;
+    grid-column: 1/2;
 
     & span {
       left: 20px;
@@ -164,6 +166,7 @@
     top: 0;
     left: 0;
     max-width: 140px;
+    word-break: break-all;
 
     @media (max-width: $vp-1199) {
       font-size: 58px;

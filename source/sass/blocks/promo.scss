@@ -117,6 +117,11 @@
 .promo__wrapper-image {
   position: relative;
   margin: 0 auto;
+  place-self: start end;
+
+  @media (max-width: $vp-1199) {
+    place-self: auto;
+  }
 
   @media (min-width: $vp-768) {
     width: 100%;
@@ -260,27 +265,11 @@
   }
 }
 
-// .promo__video {
-//   width: 366px;
-//   height: 228px;
-//   position: absolute;
-//   bottom: -112px;
-//   left: -68px;
-
-//   @media (max-width: $vp-1199) {
-//     width: 266px;
-//     height: 167px;
-//     left: 30%;
-//     bottom: -80px;
-//   }
-
-//   @media (max-width: $vp-767) {
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 34%;
-//   }
-// }
+.promo__video {
+  @media (max-width: $vp-1199) {
+    height: 100%;
+  }
+}
 
 .promo__video iframe {
   width: 366px;

@@ -33,7 +33,7 @@
   color: $tel-color;
 
   @media (max-width: $vp-1199) {
-    padding: 62px 133px 67px;
+    padding: 62px 3vw 67px 17vw;
     background-color: $text-color;
   }
 
@@ -205,7 +205,7 @@
   padding-left: 120px;
 
   @media (max-width: $vp-1199) {
-    padding: 62px 129px 61px;
+    padding: 62px 3vw 67px 16.8vw;
   }
 
   @media (max-width: $vp-767) {
