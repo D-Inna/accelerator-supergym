@@ -45,12 +45,19 @@
 
   @media (max-width: $vp-1199) {
     transform: translateX(3px);
+    width: 88vw;
+  }
+
+  @media (max-width: $vp-450) {
+    width: 96vw;
+    margin: 0;
+    transform: translateX(-3px);
   }
 
   @media (max-width: $vp-767) {
     width: 96vw;
     margin: 0;
-    transform: translateX(-3px);
+    transform: translateX(19px);
   }
 }
 
@@ -62,14 +69,25 @@
   width: 560px;
   transform: translateX(50px);
 
-  @media (max-width: $vp-1199) {
-    width: 566px;
+  @media (max-width: $vp-1024) {
+    width: 74vw;
     padding: 57px 60px 59px 67px;
   }
 
-  @media (max-width: $vp-767) {
-    //width: 226px;
+  @media (max-width: $vp-1199) {
+    width: 80vw;
+    padding: 57px 60px 59px 67px;
+  }
+
+  @media (max-width: $vp-450) {
     width: 71vw;
+    padding: 42px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 84vw;
     padding: 42px 25px;
     display: grid;
     grid-template-columns: 1fr;
@@ -106,10 +124,16 @@
     margin: 0;
     margin-bottom: 13px;
 
-    @media (max-width: $vp-767) {
+    @media (max-width: $vp-450) {
       grid-area: title;
       margin-top: 5px;
       margin-bottom: 12px;
+    }
+
+    @media (max-width: $vp-767) {
+      grid-area: title;
+      margin-top: 5px;
+      margin-bottom: 25px;
     }
   }
 
@@ -142,12 +166,30 @@
     border: 1px solid $arrow-grey;
     border-top: none;
     border-right: none;
-    transform: translate(-7px, -10px) rotate(45deg);
+    transform: translate(-5px, -10px) rotate(45deg);
 
     @media (max-width: $vp-767) {
       width: 17px;
       height: 19px;
       left: 15px;
+    }
+  }
+
+
+  &:focus,
+  &:hover {
+    outline: none;
+
+    &::before {
+      border-bottom: 1px solid $color-default-black;
+      border-left: 1px solid $color-default-black;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-bottom: 1px solid $color-default-black;
+      border-left: 1px solid $color-default-black;
     }
   }
 }

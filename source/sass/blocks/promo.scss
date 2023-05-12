@@ -105,6 +105,7 @@
 
     @media (max-width: $vp-767) {
       text-align: left;
+      padding-right: 27px;
     }
 
     &:first-of-type {
@@ -123,6 +124,11 @@
 
   @media (max-width: $vp-767) {
     margin-top: -10px;
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
   }
 
   & img {
@@ -198,7 +204,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     display: block;
     background: linear-gradient(80deg, $dark-red 20%, $middle-blue 90%);
@@ -213,9 +219,14 @@
     transform: translate(-50%, -50%);
   }
 
+  @media (max-width: $vp-1024) {
+    left: 36%;
+    bottom: 27%;
+  }
+
   @media (max-width: $vp-1199) {
-    left: 12.5vw;
-    bottom: 46px;
+    left: 42%;
+    bottom: 33%;
     width: 73px;
     height: 73px;
 
@@ -228,9 +239,14 @@
     }
   }
 
+  @media (max-width: $vp-450) {
+    left: 39%;
+    bottom: 27%;
+  }
+
   @media (max-width: $vp-767) {
-    left: 39vw;
-    bottom: 14vw;
+    left: 47%;
+    bottom: 36%;
   }
 
   &:hover,

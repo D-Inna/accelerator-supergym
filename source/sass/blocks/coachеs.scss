@@ -4,7 +4,9 @@
   position: relative;
 
   @media (max-width: $vp-1199) {
-    max-width: 858px;
+    //max-width: 858px;
+
+    max-width: 1050px;
   }
 
   h2 {
@@ -55,8 +57,13 @@
     max-width: 866px;
   }
 
-  @media (max-width: $vp-1199) {
+  @media (max-width: $vp-1024) {
     max-width: 566px;
+  }
+
+  @media (max-width: $vp-1199) {
+    //max-width: 566px;
+    max-width: 866px;
   }
 
   @media (max-width: $vp-767) {
@@ -87,8 +94,16 @@
   max-width: 260px;
   max-height: 294px;
 
-  @media (max-width: $vp-1199) {
+  @media (max-width: $vp-1024) {
     max-width: 268px;
+    height: 294px;
+  }
+
+  @media (max-width: $vp-1199) {
+    max-width: 420px;
+    aspect-ratio: 1/1.2;
+    height: auto;
+    max-height: none;
   }
 
   @media (max-width: $vp-767) {
@@ -108,7 +123,7 @@
 .coachеs__item:focus,
 .coachеs__item:focus-within {
   .coachеs__info {
-    background-color: $color-bg-slider;
+    background-color: rgba($color-bg-slider, 0.89);
     display: block;
     max-height: inherit;
     padding-top: 51px;
@@ -290,8 +305,8 @@
     outline: none;
 
     &::before {
-      border-bottom: 1px solid $color-default-black;
-      border-left: 1px solid $color-default-black;
+      border-bottom: 2px solid $color-default-black;
+      border-left: 2px solid $color-default-black;
     }
   }
 

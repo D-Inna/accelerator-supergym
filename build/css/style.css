@@ -2206,6 +2206,7 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  width: 130px;
 }
 
 .header__logo:hover,
@@ -2254,7 +2255,7 @@ button,
   -ms-grid-columns: 130px 265px;
   grid-template-columns: 130px 265px;
   margin-right: 65px;
-  margin-top: 105px;
+  margin-top: 108px;
 }
 
 .header__info h1 {
@@ -2279,15 +2280,16 @@ button,
 .header__info h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 41px;
   line-height: 48px;
   color: #ffffff;
   margin: 0;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  margin-left: 134px;
+  margin-left: 133.5px;
   text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 .header__info p {
@@ -2440,7 +2442,7 @@ button,
 .promo__icon::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   display: block;
   background: -o-linear-gradient(10deg, #b80027 20%, #003d85 90%);
@@ -2638,6 +2640,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2657,6 +2661,7 @@ button,
   text-align: center;
   position: relative;
   z-index: 1;
+  word-break: break-all;
 }
 
 .subscriptions__price span::before {
@@ -2668,8 +2673,9 @@ button,
   line-height: 150px;
   color: #e8e8e8;
   top: -52px;
-  left: -22px;
+  left: -46px;
   z-index: -1;
+  width: 255px;
 }
 
 .subscriptions__price svg {
@@ -2776,6 +2782,7 @@ button,
   grid-template-columns: 201px auto;
   gap: 50px;
   row-gap: 0;
+  max-width: 500px;
 }
 
 .promo-games__inner h2 {
@@ -2881,6 +2888,10 @@ button,
   opacity: 0.5;
 }
 
+.promo-games__wrapper-image img {
+  height: 100%;
+}
+
 .coachеs__wrapper {
   max-width: 1294px;
   margin: 0 auto;
@@ -2928,7 +2939,7 @@ button,
 .coachеs__item:hover .coachеs__info,
 .coachеs__item:focus .coachеs__info,
 .coachеs__item:focus-within .coachеs__info {
-  background-color: #2a3e67;
+  background-color: rgba(42, 62, 103, 0.89);
   display: block;
   max-height: inherit;
   padding-top: 51px;
@@ -3073,8 +3084,8 @@ button,
 
 .coachеs__button:focus::before,
 .coachеs__button:hover::before {
-  border-bottom: 1px solid #000000;
-  border-left: 1px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
 }
 
 .coachеs__button:active::before {
@@ -3119,6 +3130,7 @@ button,
   -moz-column-gap: 60px;
   column-gap: 60px;
   row-gap: 153px;
+  word-break: break-all;
 }
 
 .advantages__item {
@@ -3154,6 +3166,7 @@ button,
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 140px;
 }
 
 .advantages__item small {
@@ -3282,6 +3295,10 @@ button,
   justify-content: center;
 }
 
+.promotion__info-wrapper img {
+  height: 100%;
+}
+
 .promotion__info {
   background-color: #ed0233;
   color: #ffffff;
@@ -3305,6 +3322,8 @@ button,
   margin: 0;
   margin-bottom: 32px;
   margin-top: 8px;
+  word-break: break-all;
+  max-width: 150px;
 }
 
 .promotion__info p {
@@ -3458,9 +3477,30 @@ button,
   border: 1px solid #afafaf;
   border-top: none;
   border-right: none;
-  -webkit-transform: translate(-7px, -10px) rotate(45deg);
-  -ms-transform: translate(-7px, -10px) rotate(45deg);
-  transform: translate(-7px, -10px) rotate(45deg);
+  -webkit-transform: translate(-5px, -10px) rotate(45deg);
+  -ms-transform: translate(-5px, -10px) rotate(45deg);
+  transform: translate(-5px, -10px) rotate(45deg);
+}
+
+.reviews__button--next:focus,
+.reviews__button--next:hover,
+.reviews__button--prev:focus,
+.reviews__button--prev:hover {
+  outline: none;
+}
+
+.reviews__button--next:focus::before,
+.reviews__button--next:hover::before,
+.reviews__button--prev:focus::before,
+.reviews__button--prev:hover::before {
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+
+.reviews__button--next:active::before,
+.reviews__button--prev:active::before {
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
 }
 
 .reviews__button--next::before {
@@ -3490,7 +3530,6 @@ button,
 
 .form__modal-auth {
   color: #ffffff;
-  background-color: #102654;
 }
 
 .form__modal-auth h2 {
@@ -3523,16 +3562,20 @@ button,
   background-color: #102654;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__modal-auth form button:hover,
 .form__modal-auth form button:focus {
-  -o-border-image: -o-linear-gradient(315deg, #d10a42 0, #00359f 100%) 30;
-  border-image: linear-gradient(135deg, #d10a42 0, #00359f 100%) 30;
+  opacity: 0.7;
 }
 
 .form__modal-auth form button:active {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .form__modal-auth input::-webkit-input-placeholder {
@@ -3672,10 +3715,10 @@ button,
   letter-spacing: -0.1px;
 }
 
-.form__contacts-list::before {
+.form__contacts-list::after {
   position: absolute;
   content: "";
-  height: 102px;
+  height: 92%;
   width: 1px;
   background-color: #74819c;
   top: 4%;
@@ -3690,6 +3733,11 @@ button,
   line-height: 21px;
   margin: 0;
   color: #102654;
+  width: 115px;
+}
+
+.form__contacts-link--tel {
+  width: 97px;
 }
 
 .main-footer {
@@ -3877,11 +3925,11 @@ button,
   }
 
   .advantages__item--main::after {
-    left: 22vw;
+    left: 297px;
   }
 
   .advantages__item--main::before {
-    right: 22vw;
+    right: 297px;
   }
 
   .form {
@@ -4038,8 +4086,8 @@ button,
   }
 
   .promo__icon {
-    left: 12.5vw;
-    bottom: 46px;
+    left: 42%;
+    bottom: 33%;
     width: 73px;
     height: 73px;
   }
@@ -4080,8 +4128,13 @@ button,
   }
 
   .subscriptions__tabs {
-    gap: 44px;
+    gap: 0;
     margin-bottom: 56px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .subscriptions__tabs::before {
@@ -4113,12 +4166,17 @@ button,
   }
 
   .promo-games__inner {
-    padding: 49px 45px 46px;
-    -ms-grid-columns: 117px auto;
-    grid-template-columns: 117px auto;
+    padding: 11.4vw 5.9vw 5.9vw;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
     -webkit-column-gap: 29px;
     -moz-column-gap: 29px;
     column-gap: 29px;
+    max-width: 300px;
   }
 
   .promo-games__inner h2 {
@@ -4133,7 +4191,8 @@ button,
   .promo-games__inner p {
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 23px;
+    margin-bottom: 15.5%;
+    margin-top: 3%;
   }
 
   .promo-games__list dt {
@@ -4175,10 +4234,11 @@ button,
     -ms-transform: translateX(-1px);
     transform: translateX(-1px);
     margin: 0 -3px 4.5px 0;
+    min-height: 39px;
   }
 
   .coachеs__wrapper {
-    max-width: 858px;
+    max-width: 1050px;
   }
 
   .coachеs__wrapper h2 {
@@ -4195,7 +4255,7 @@ button,
   }
 
   .coachеs__slider {
-    max-width: 566px;
+    max-width: 866px;
   }
 
   .coachеs__list {
@@ -4203,7 +4263,10 @@ button,
   }
 
   .coachеs__item {
-    max-width: 268px;
+    max-width: 420px;
+    aspect-ratio: 1/1.2;
+    height: auto;
+    max-height: none;
   }
 
   .coachеs__item:hover .coachеs__info,
@@ -4259,7 +4322,7 @@ button,
   .advantages__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 18vw;
     row-gap: 43px;
   }
 
@@ -4312,7 +4375,7 @@ button,
   .advantages__item--main span {
     font-size: 72px;
     top: 40px;
-    left: 21.5vw;
+    left: 28.5vw;
   }
 
   .advantages__item--main h3 {
@@ -4357,11 +4420,33 @@ button,
 
   .promotion__info-wrapper img {
     height: 100%;
-    width: 100%;
+    width: 55vw;
+  }
+
+  .promotion__info {
+    width: 36.5vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content auto;
+    -ms-grid-rows: min-content min-content min-content auto;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content auto;
+    grid-template-rows: min-content min-content min-content auto;
   }
 
   .promotion__info p {
-    padding-bottom: 186px;
+    padding-bottom: 25vw;
+  }
+
+  .promotion__link {
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
+    align-self: end;
+    width: 80px;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
   }
 
   .promotion__description {
@@ -4380,6 +4465,7 @@ button,
 
   .promotion__description p {
     padding-bottom: 43px;
+    padding-right: 27px;
   }
 
   .promotion__description--discounts {
@@ -4393,6 +4479,8 @@ button,
 
   .promotion__description--discounts p {
     padding-bottom: 62px;
+    padding-right: 0;
+    letter-spacing: 0.12px;
   }
 
   .reviews {
@@ -4412,10 +4500,11 @@ button,
     -webkit-transform: translateX(3px);
     -ms-transform: translateX(3px);
     transform: translateX(3px);
+    width: 88vw;
   }
 
   .reviews__slide-container {
-    width: 566px;
+    width: 80vw;
     padding: 57px 60px 59px 67px;
   }
 
@@ -4427,6 +4516,7 @@ button,
 
   .form__modal-auth {
     padding: 62px 133px 67px;
+    background-color: #102654;
   }
 
   .form__modal-auth h2 {
@@ -4477,15 +4567,19 @@ button,
     line-height: 27px;
   }
 
-  .form__contacts-list::before {
-    height: 129px;
-    left: 53%;
+  .form__contacts-list::after {
+    left: 270px;
   }
 
   .form__contacts-link {
     letter-spacing: 1px;
     font-size: 16px;
     line-height: 27px;
+    width: 147px;
+  }
+
+  .form__contacts-link--tel {
+    width: 120px;
   }
 
   .main-footer {
@@ -4530,6 +4624,68 @@ button,
   }
 }
 
+@media (max-width: 1024px) {
+  .promo__icon {
+    left: 36%;
+    bottom: 27%;
+  }
+
+  .promo-games__inner {
+    padding: 6.4vw 5.9vw 5.9vw;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    -ms-grid-rows: min-content min-content min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
+    -webkit-column-gap: 29px;
+    -moz-column-gap: 29px;
+    column-gap: 29px;
+    max-width: 300px;
+  }
+
+  .coachеs__slider {
+    max-width: 566px;
+  }
+
+  .coachеs__item {
+    max-width: 268px;
+    height: 294px;
+  }
+
+  .advantages__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    row-gap: 43px;
+  }
+
+  .advantages__item--main span {
+    font-size: 72px;
+    top: 40px;
+    left: 21.5vw;
+  }
+
+  .promotion__info-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
+  .promotion__info-wrapper img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .reviews__slide-container {
+    width: 74vw;
+    padding: 57px 60px 59px 67px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0;
@@ -4563,6 +4719,10 @@ button,
     max-width: 737px;
   }
 
+  .header__logo {
+    width: 90px;
+  }
+
   .header__logo img {
     width: 69px;
     height: 24px;
@@ -4577,7 +4737,10 @@ button,
   .header__info {
     -ms-grid-columns: 113px auto;
     grid-template-columns: 113px auto;
-    margin-right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 43px;
   }
 
   .header__info h1 {
@@ -4607,10 +4770,12 @@ button,
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
-    width: 100%;
+    width: 98%;
     padding: 21px 16px;
     margin-top: 15.5px;
-    margin-right: 5px;
+    -webkit-transform: translate(-8.4px, 7.2px);
+    -ms-transform: translate(-8.4px, 7.2px);
+    transform: translate(-8.4px, 7.2px);
   }
 
   .header__image-container img {
@@ -4648,10 +4813,16 @@ button,
 
   .promo__info p {
     text-align: left;
+    padding-right: 27px;
   }
 
   .promo__wrapper-image {
     margin-top: -10px;
+    width: 100%;
+  }
+
+  .promo__wrapper-image img {
+    width: 100%;
   }
 
   .promo__container-video {
@@ -4676,8 +4847,8 @@ button,
   }
 
   .promo__icon {
-    left: 39vw;
-    bottom: 14vw;
+    left: 47%;
+    bottom: 36%;
   }
 
   .promo__video iframe {
@@ -4703,7 +4874,11 @@ button,
 
   .subscriptions__tabs {
     gap: 45px;
+    margin: 0;
     margin-bottom: 48px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .subscriptions__tabs::before {
@@ -4776,6 +4951,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .promo-games__inner {
@@ -4790,6 +4967,10 @@ button,
   .promo-games__inner p {
     margin-bottom: 32px;
     margin-top: 5px;
+  }
+
+  .promo-games__list {
+    margin-left: auto;
   }
 
   .promo-games__link {
@@ -4858,7 +5039,7 @@ button,
   }
 
   .advantages {
-    padding: 63px 0 65px;
+    padding: 63px 0 66px;
   }
 
   .advantages__wrapper {
@@ -4880,17 +5061,12 @@ button,
     gap: 40px;
   }
 
-  .advantages__item:nth-child(2n) {
-    padding-left: 48px;
-    padding-right: 53px;
-  }
-
   .advantages__item:nth-child(2n) span {
-    left: 116px;
+    left: 45%;
   }
 
   .advantages__item:nth-child(2n) small {
-    left: 147px;
+    left: 49%;
   }
 
   .advantages__item {
@@ -4899,17 +5075,16 @@ button,
   }
 
   .advantages__item:last-child small {
-    left: 147px;
+    left: 49.5%;
   }
 
   .advantages__item span {
-    top: 0;
-    left: 131px;
+    left: 47%;
   }
 
   .advantages__item small {
     top: 55px;
-    left: 137px;
+    left: 47.5%;
   }
 
   .advantages__wrapper-info {
@@ -4918,12 +5093,24 @@ button,
   }
 
   .advantages__wrapper-info h3 {
-    letter-spacing: -1.7px;
+    letter-spacing: -1.8px;
     margin-bottom: 1px;
   }
 
   .advantages__wrapper-info p {
     margin-top: 0;
+  }
+
+  .advantages__wrapper-info--comfort h3 {
+    letter-spacing: -1.9px;
+    -webkit-transform: translate(1px, 2px);
+    -ms-transform: translate(1px, 2px);
+    transform: translate(1px, 2px);
+  }
+
+  .advantages__wrapper-info--comfort p {
+    margin-top: 4px;
+    margin-bottom: -4px;
   }
 
   .advantages__item--main {
@@ -4940,7 +5127,7 @@ button,
 
   .advantages__item--main span {
     top: 46px;
-    left: 32vw;
+    left: 43vw;
   }
 
   .advantages__item--main h3 {
@@ -4977,6 +5164,7 @@ button,
   }
 
   .promotion__info {
+    display: block;
     width: 100%;
     text-align: center;
     padding-bottom: 43px;
@@ -5005,6 +5193,7 @@ button,
 
   .promotion__description p {
     padding-bottom: 20px;
+    padding-right: 0;
   }
 
   .promotion__description--discounts {
@@ -5033,13 +5222,13 @@ button,
   .reviews__swiper {
     width: 96vw;
     margin: 0;
-    -webkit-transform: translateX(-3px);
-    -ms-transform: translateX(-3px);
-    transform: translateX(-3px);
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
   }
 
   .reviews__slide-container {
-    width: 71vw;
+    width: 84vw;
     padding: 42px 25px;
     display: -ms-grid;
     display: grid;
@@ -5076,12 +5265,17 @@ button,
   .reviews__slide-info h3 {
     grid-area: title;
     margin-top: 5px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
   }
 
   .reviews__slide-info p {
     text-align: center;
     grid-area: text;
+  }
+
+  .reviews__slide-info h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
 
   .reviews__slide-info h3 {
@@ -5142,7 +5336,7 @@ button,
   }
 
   .form__custom-input input {
-    width: 290px;
+    width: 100%;
   }
 
   .form__contacts {
@@ -5163,7 +5357,7 @@ button,
     padding-left: 0;
   }
 
-  .form__contacts-list::before {
+  .form__contacts-list::after {
     display: none;
   }
 
@@ -5403,6 +5597,77 @@ button,
 
   .form__custom-input__error {
     bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .promo__icon {
+    left: 39%;
+    bottom: 27%;
+  }
+
+  .advantages__item:nth-child(2n) {
+    padding-left: 48px;
+    padding-right: 53px;
+  }
+
+  .advantages__item:nth-child(2n) span {
+    left: 36%;
+  }
+
+  .advantages__item:nth-child(2n) small {
+    top: 55px;
+    left: 45.5%;
+  }
+
+  .advantages__item:last-child small {
+    left: 46.5%;
+  }
+
+  .advantages__item span {
+    top: 0;
+    left: 41%;
+  }
+
+  .advantages__item small {
+    top: 55px;
+    left: 43%;
+  }
+
+  .advantages__item--car small {
+    top: 52px;
+    letter-spacing: -0.9px;
+    -webkit-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  .advantages__item--main span {
+    top: 46px;
+    left: 32vw;
+  }
+
+  .reviews__swiper {
+    width: 96vw;
+    margin: 0;
+    -webkit-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  .reviews__slide-container {
+    width: 71vw;
+    padding: 42px 25px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .reviews__slide-info h3 {
+    grid-area: title;
+    margin-top: 5px;
+    margin-bottom: 12px;
   }
 }
 

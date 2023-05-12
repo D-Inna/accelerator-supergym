@@ -59,13 +59,18 @@
   margin-bottom: 50px;
 
   @media (max-width: $vp-1199) {
-    gap: 44px;
+    gap: 0;
     margin-bottom: 56px;
+    justify-content: space-evenly;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   @media (max-width: $vp-767) {
     gap: 45px;
+    margin: 0;
     margin-bottom: 48px;
+    justify-content: center;
   }
 
   &::before {
@@ -229,6 +234,7 @@
 
 .subscriptions__price {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 14px;
@@ -247,6 +253,7 @@
     text-align: center;
     position: relative;
     z-index: 1;
+    word-break: break-all;
 
     @media (max-width: $vp-767) {
       font-size: 48px;
@@ -263,8 +270,9 @@
       line-height: 150px;
       color: $text-shadow;
       top: -52px;
-      left: -22px;
+      left: -46px;
       z-index: -1;
+      width: 255px;
 
       @media (max-width: $vp-767) {
         font-size: 80px;

@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 63px 0 65px;
+    padding: 63px 0 66px;
   }
 }
 
@@ -57,10 +57,17 @@
   grid-template-columns: 1fr 240px 1fr;
   column-gap: 60px;
   row-gap: 153px;
+  word-break: break-all;
+
+  @media (max-width: $vp-1024) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    row-gap: 43px;
+  }
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 18vw;
     row-gap: 43px;
   }
 
@@ -100,16 +107,35 @@
       }
     }
 
-    @media (max-width: $vp-767) {
+    @media (max-width: $vp-450) {
       padding-left: 48px;
       padding-right: 53px;
 
       & span {
-        left: 116px;
+        left: 36%;
       }
 
       & small {
-        left: 147px;
+        top: 55px;
+        left: 45.5%;
+      }
+    }
+
+    @media (max-width: $vp-767) {
+      & span {
+        left: 45%;
+      }
+
+      & small {
+        left: 49%;
+      }
+    }
+  }
+
+  @media (max-width: $vp-450) {
+    &:last-child {
+      & small {
+        left: 46.5%;
       }
     }
   }
@@ -120,7 +146,8 @@
 
     &:last-child {
       & small {
-        left: 147px;
+        //left: 46.5%;
+        left: 49.5%;
       }
     }
   }
@@ -136,15 +163,20 @@
     position: absolute;
     top: 0;
     left: 0;
+    max-width: 140px;
 
     @media (max-width: $vp-1199) {
       font-size: 58px;
       line-height: 58px;
     }
 
-    @media (max-width: $vp-767) {
+    @media (max-width: $vp-450) {
       top: 0;
-      left: 131px;
+      left: 41%;
+    }
+
+    @media (max-width: $vp-767) {
+      left: 47%;
     }
   }
 
@@ -160,9 +192,14 @@
       top: 54px;
     }
 
+    @media (max-width: $vp-450) {
+      top: 55px;
+      left: 43%;
+    }
+
     @media (max-width: $vp-767) {
       top: 55px;
-      left: 137px;
+      left: 47.5%;
     }
   }
 
@@ -170,6 +207,16 @@
     &:last-child {
       grid-column: 3/4;
       grid-row: 2/3;
+    }
+  }
+}
+
+.advantages__item--car {
+  & small {
+    @media (max-width: $vp-450) {
+      top: 52px;
+      letter-spacing: -0.9px;
+      transform: translateX(3px);
     }
   }
 }
@@ -200,7 +247,7 @@
     }
 
     @media (max-width: $vp-767) {
-      letter-spacing: -1.7px;
+      letter-spacing: -1.8px;
       margin-bottom: 1px;
     }
   }
@@ -219,6 +266,22 @@
 
     @media (max-width: $vp-767) {
       margin-top: 0;
+    }
+  }
+}
+
+.advantages__wrapper-info--comfort {
+  & h3 {
+    @media (max-width: $vp-767) {
+      letter-spacing: -1.9px;
+      transform: translate(1px, 2px);
+    }
+  }
+
+  & p {
+    @media (max-width: $vp-767) {
+      margin-top: 4px;
+      margin-bottom: -4px;
     }
   }
 }
@@ -259,15 +322,26 @@
     top: 71px;
     left: 63px;
 
-    @media (max-width: $vp-1199) {
+    @media (max-width: $vp-1024) {
       font-size: 72px;
       top: 40px;
       left: 21.5vw;
     }
 
-    @media (max-width: $vp-767) {
+    @media (max-width: $vp-1199) {
+      font-size: 72px;
+      top: 40px;
+      left: 28.5vw;
+    }
+
+    @media (max-width: $vp-450) {
       top: 46px;
       left: 32vw;
+    }
+
+    @media (max-width: $vp-767) {
+      top: 46px;
+      left: 43vw;
     }
   }
 
@@ -319,11 +393,11 @@
     }
 
     &::after {
-      left: 22vw;
+      left: 297px;
     }
 
     &::before {
-      right: 22vw;
+      right: 297px;
     }
   }
 }
