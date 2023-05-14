@@ -230,6 +230,12 @@
       transform: translateX(3px);
     }
   }
+
+  @media (max-width: $vp-767) {
+    padding-top: 79px;
+    padding-bottom: 1px;
+    padding-left: 12px;
+  }
 }
 
 .advantages__wrapper-info {
@@ -255,6 +261,7 @@
       font-size: 20px;
       line-height: 30px;
       margin-bottom: 2px;
+      letter-spacing: -1.8px;
     }
 
     @media (max-width: $vp-767) {

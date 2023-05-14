@@ -16,13 +16,13 @@
 
   @media (max-width: $vp-767) {
     flex-direction: column;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
   }
 }
 
 .promo-games__inner {
-  padding: 80px 78px 87px;
+  padding: 80px 78px 85px;
   background-color: $link-red;
   color: $tel-color;
   display: grid;
@@ -49,6 +49,7 @@
 
   @media (max-width: $vp-767) {
     padding: 49px 44px 50px;
+    max-width: 100%;
   }
 
   & h2 {
@@ -156,7 +157,7 @@
       position: absolute;
       content: "";
       top: -5px;
-      left: -29px;
+      left: -25px;
       height: 1px;
       width: 64px;
       background-color: $tel-color;
@@ -188,7 +189,7 @@
   line-height: 14px;
   color: $tel-color;
   text-transform: uppercase;
-  padding: 21px 11px;
+  padding: 25px 11px 21px;
   border: 4px solid $tel-color;
   margin-top: 5px;
   text-align: center;
