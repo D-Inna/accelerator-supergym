@@ -2262,7 +2262,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 800;
   font-size: 92px;
-  line-height: 111px;
+  line-height: 109px;
   color: #ffffff;
   margin: -27px 0 0;
   -ms-grid-column: 2;
@@ -2281,7 +2281,7 @@ button,
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 41px;
-  line-height: 48px;
+  line-height: 46px;
   color: #ffffff;
   margin: 0;
   -ms-grid-column: 2;
@@ -2304,7 +2304,7 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   text-align: right;
-  margin-top: 95px;
+  margin-top: 93px;
 }
 
 .header__link-info {
@@ -2315,7 +2315,10 @@ button,
   color: #ffffff;
   margin: 0;
   border: 4px solid #ffffff;
-  padding: 18px;
+  padding: 20px;
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2324,7 +2327,8 @@ button,
   -ms-grid-row-align: start;
   -ms-grid-column-align: end;
   place-self: start end;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .header__link-info:hover,
@@ -2776,7 +2780,7 @@ button,
 }
 
 .promo-games__inner {
-  padding: 80px 78px 87px;
+  padding: 80px 78px 85px;
   background-color: #ed0233;
   color: #ffffff;
   display: -ms-grid;
@@ -2856,7 +2860,7 @@ button,
   position: absolute;
   content: "";
   top: -5px;
-  left: -29px;
+  left: -25px;
   height: 1px;
   width: 64px;
   background-color: #ffffff;
@@ -2875,7 +2879,7 @@ button,
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 21px 11px;
+  padding: 25px 11px 21px;
   border: 4px solid #ffffff;
   margin-top: 5px;
   text-align: center;
@@ -4381,6 +4385,7 @@ button,
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2px;
+    letter-spacing: -1.8px;
   }
 
   .advantages__wrapper-info p {
@@ -4541,7 +4546,7 @@ button,
   }
 
   .form__modal-auth {
-    padding: 62px 3vw 67px 17vw;
+    padding: 62px 3vw 68px 17vw;
     background-color: #102654;
   }
 
@@ -4565,7 +4570,7 @@ button,
   }
 
   .form__contacts {
-    padding: 62px 3vw 67px 16.8vw;
+    padding: 62px 3vw 61px 16.8vw;
   }
 
   .form__contacts h2 {
@@ -4741,8 +4746,12 @@ button,
   }
 
   .header__container {
-    padding: 16px 15px 84px;
+    padding: 18px 15px 84px;
     max-width: 737px;
+  }
+
+  .header__nav {
+    margin-bottom: 29px;
   }
 
   .header__logo {
@@ -4955,8 +4964,8 @@ button,
   .subscriptions__price span::before {
     font-size: 80px;
     line-height: 120px;
-    top: -44px;
-    left: -16px;
+    top: -42px;
+    left: -63px;
   }
 
   .subscriptions__price svg {
@@ -4977,12 +4986,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
   }
 
   .promo-games__inner {
     padding: 49px 44px 50px;
+    max-width: 100%;
   }
 
   .promo-games__inner h2 {
@@ -5115,6 +5125,12 @@ button,
   .advantages__item small {
     top: 55px;
     left: 47.5%;
+  }
+
+  .advantages__item--car {
+    padding-top: 79px;
+    padding-bottom: 1px;
+    padding-left: 12px;
   }
 
   .advantages__wrapper-info {
@@ -5340,7 +5356,7 @@ button,
   }
 
   .form__modal-auth {
-    padding: 64px 15px 68px;
+    padding: 64px 15px 69px;
   }
 
   .form__modal-auth h2 {
