@@ -111,7 +111,7 @@
     grid-column: 1/2;
     grid-template-columns: 69px auto;
     gap: 30px;
-    row-gap: 12px;
+    row-gap: 4vw;
     grid-template-areas:
       ". title"
       "text text";
@@ -127,7 +127,7 @@
     @media (max-width: $vp-450) {
       grid-area: title;
       margin-top: 5px;
-      margin-bottom: 12px;
+      margin-bottom: 3.5vw;
     }
 
     @media (max-width: $vp-767) {
