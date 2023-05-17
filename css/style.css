@@ -5307,8 +5307,8 @@ button,
     -ms-grid-columns: 69px 30px auto;
     grid-template-columns: 69px auto;
     gap: 30px;
-    row-gap: 12px;
-    -ms-grid-rows: auto 12px auto;
+    row-gap: 4vw;
+    -ms-grid-rows: auto 4vw auto;
     grid-template-areas: ". title" "text text";
   }
 
@@ -5717,7 +5717,7 @@ button,
   .reviews__slide-info h3 {
     grid-area: title;
     margin-top: 5px;
-    margin-bottom: 12px;
+    margin-bottom: 3.5vw;
   }
 }
 
